@@ -6,11 +6,16 @@
 
 @implementation SceneDelegate
 
-
+#pragma clang push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions  API_AVAILABLE(ios(13.0)){
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    UIViewController *rootVC = [[UIViewController alloc] init];
+    UINavigationController *rootTabController = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    self.window.rootViewController = rootTabController;
+    [self.window makeKeyAndVisible];
 }
 
 
@@ -46,5 +51,5 @@
     // to restore the scene back to its current state.
 }
 
-
+#pragma clang pop
 @end

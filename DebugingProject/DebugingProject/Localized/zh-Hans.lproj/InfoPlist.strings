@@ -1,0 +1,26 @@
+/*
+  InfoPlist.strings
+  DebugingProject
+
+  Created by ShenYj on 2019/11/23.
+  Copyright © 2019 ShenYj. All rights reserved.
+*/
+
+"CFBundleDisplayName" ="调试项目";
+
+
+# 系统权限
+"NSBluetoothPeripheralUsageDescription" = "访问蓝牙";
+"NSCalendarsUsageDescription" = "访问日历";
+"NSCameraUsageDescription" = "相机";
+"NSPhotoLibraryUsageDescription" = "相册";
+"NSContactsUsageDescription" = "通讯录";
+"NSLocationAlwaysUsageDescription" = "始终访问位置";
+"NSLocationUsageDescription" = "位置";
+"NSLocationWhenInUseUsageDescription" = "在使用期间访问位置";
+"NSMicrophoneUsageDescription" = "麦克风";
+"NSAppleMusicUsageDescription" = "访问媒体资料库";
+"NSHealthShareUsageDescription" = "访问健康分享";
+"NSHealthUpdateUsageDescription" = "访问健康更新";
+"NSMotionUsageDescription" = "访问运动与健身";
+"NSRemindersUsageDescription" = "访问提醒事项";
