@@ -22,6 +22,9 @@
 		F728470A238982E400A48711 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F728470C238982E400A48711 /* Launch Screen.storyboard */; };
 		F72847132389838C00A48711 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F72847152389838C00A48711 /* Localizable.strings */; };
 		F728471A23898ED000A48711 /* ShortcutItem.strings in Resources */ = {isa = PBXBuildFile; fileRef = F728471C23898ED000A48711 /* ShortcutItem.strings */; };
+		F7284720238A53EF00A48711 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F728471F238A53EF00A48711 /* DemoList.plist */; };
+		F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284723238A566B00A48711 /* SYJBaseModel.m */; };
+		F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,11 @@
 		F72847162389838E00A48711 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F728471B23898ED000A48711 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShortcutItem.strings; sourceTree = "<group>"; };
 		F728471D23898ED200A48711 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/ShortcutItem.strings"; sourceTree = "<group>"; };
+		F728471F238A53EF00A48711 /* DemoList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoList.plist; sourceTree = "<group>"; };
+		F7284722238A566B00A48711 /* SYJBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBaseModel.h; sourceTree = "<group>"; };
+		F7284723238A566B00A48711 /* SYJBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBaseModel.m; sourceTree = "<group>"; };
+		F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJTransitioningViewController.h; sourceTree = "<group>"; };
+		F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJTransitioningViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,7 @@
 		F72846B3238975B200A48711 /* DebugingProject */ = {
 			isa = PBXGroup;
 			children = (
+				F7284725238AB78E00A48711 /* Demos */,
 				F728471723898CDC00A48711 /* Localized */,
 				F72846EE23897BD700A48711 /* Main */,
 				F72846E6238976ED00A48711 /* Entrance */,
@@ -179,6 +188,8 @@
 		F72846EE23897BD700A48711 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F7284721238A565E00A48711 /* Model */,
+				F728471E238A508900A48711 /* Config */,
 				F72846EF23897BE100A48711 /* Controllers */,
 				F72846F323897D8900A48711 /* SYJShortcutItemManager.h */,
 				F72846F423897D8900A48711 /* SYJShortcutItemManager.m */,
@@ -205,6 +216,48 @@
 				F728471C23898ED000A48711 /* ShortcutItem.strings */,
 			);
 			path = Localized;
+			sourceTree = "<group>";
+		};
+		F728471E238A508900A48711 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F728471F238A53EF00A48711 /* DemoList.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F7284721238A565E00A48711 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7284722238A566B00A48711 /* SYJBaseModel.h */,
+				F7284723238A566B00A48711 /* SYJBaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7284725238AB78E00A48711 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				F7284726238AB79600A48711 /* Transition */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		F7284726238AB79600A48711 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				F7284727238AB7A600A48711 /* Controller */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		F7284727238AB7A600A48711 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */,
+				F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +353,7 @@
 				F72846FD23897FA600A48711 /* InfoPlist.strings in Resources */,
 				F728471A23898ED000A48711 /* ShortcutItem.strings in Resources */,
 				F728470A238982E400A48711 /* Launch Screen.storyboard in Resources */,
+				F7284720238A53EF00A48711 /* DemoList.plist in Resources */,
 				F72846E22389766D00A48711 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +497,10 @@
 			files = (
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
+				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
+				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
 				F72846E52389766D00A48711 /* main.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
 			);

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SYJShortcutItemManager.h"
+#import "SYJNavigationController.h"
+#import "SYJViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if (@available(iOS 11.0, *)) {
+        [UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
+    
     if (IOS_VERSION < 13.0) {
-        UIViewController *rootVC = [[UIViewController alloc] init];
-        UINavigationController *rootTabController = [[UINavigationController alloc] initWithRootViewController:rootVC];
+        SYJViewController *rootVC = [[SYJViewController alloc] init];
+        SYJNavigationController *rootTabController = [[SYJNavigationController alloc] initWithRootViewController:rootVC];
         self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
         self.window.rootViewController = rootTabController;
         [self.window makeKeyAndVisible];
