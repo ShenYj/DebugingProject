@@ -25,6 +25,8 @@
 		F7284720238A53EF00A48711 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F728471F238A53EF00A48711 /* DemoList.plist */; };
 		F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284723238A566B00A48711 /* SYJBaseModel.m */; };
 		F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */; };
+		F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472C238AC02D00A48711 /* SYJModalViewController.m */; };
+		F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		F7284723238A566B00A48711 /* SYJBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBaseModel.m; sourceTree = "<group>"; };
 		F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJTransitioningViewController.h; sourceTree = "<group>"; };
 		F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJTransitioningViewController.m; sourceTree = "<group>"; };
+		F728472B238AC02D00A48711 /* SYJModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJModalViewController.h; sourceTree = "<group>"; };
+		F728472C238AC02D00A48711 /* SYJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJModalViewController.m; sourceTree = "<group>"; };
+		F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBouncePresentAnimation.h; sourceTree = "<group>"; };
+		F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBouncePresentAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +262,10 @@
 			children = (
 				F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */,
 				F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */,
+				F728472B238AC02D00A48711 /* SYJModalViewController.h */,
+				F728472C238AC02D00A48711 /* SYJModalViewController.m */,
+				F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */,
+				F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -498,6 +508,8 @@
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
+				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
+				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
