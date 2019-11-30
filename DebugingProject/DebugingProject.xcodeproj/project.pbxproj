@@ -27,6 +27,9 @@
 		F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */; };
 		F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472C238AC02D00A48711 /* SYJModalViewController.m */; };
 		F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */; };
+		F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724172392869A003C00AF /* SYJBiometricViewController.m */; };
+		F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F767241A23929340003C00AF /* SYJBiometricManager.m */; };
+		F767241E2392C061003C00AF /* Biometric.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76724202392C061003C00AF /* Biometric.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,12 @@
 		F728472C238AC02D00A48711 /* SYJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJModalViewController.m; sourceTree = "<group>"; };
 		F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBouncePresentAnimation.h; sourceTree = "<group>"; };
 		F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBouncePresentAnimation.m; sourceTree = "<group>"; };
+		F76724162392869A003C00AF /* SYJBiometricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricViewController.h; sourceTree = "<group>"; };
+		F76724172392869A003C00AF /* SYJBiometricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBiometricViewController.m; sourceTree = "<group>"; };
+		F767241923929340003C00AF /* SYJBiometricManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricManager.h; sourceTree = "<group>"; };
+		F767241A23929340003C00AF /* SYJBiometricManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBiometricManager.m; sourceTree = "<group>"; };
+		F767241F2392C061003C00AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Biometric.strings; sourceTree = "<group>"; };
+		F76724212392C064003C00AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Biometric.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +229,7 @@
 				F72846FF23897FA600A48711 /* InfoPlist.strings */,
 				F72847152389838C00A48711 /* Localizable.strings */,
 				F728471C23898ED000A48711 /* ShortcutItem.strings */,
+				F76724202392C061003C00AF /* Biometric.strings */,
 			);
 			path = Localized;
 			sourceTree = "<group>";
@@ -244,17 +254,18 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				F7284726238AB79600A48711 /* Transition */,
+				F76724142392865B003C00AF /* Biometric(生物识别) */,
+				F7284726238AB79600A48711 /* Transition(转场) */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
 		};
-		F7284726238AB79600A48711 /* Transition */ = {
+		F7284726238AB79600A48711 /* Transition(转场) */ = {
 			isa = PBXGroup;
 			children = (
 				F7284727238AB7A600A48711 /* Controller */,
 			);
-			path = Transition;
+			path = "Transition(转场)";
 			sourceTree = "<group>";
 		};
 		F7284727238AB7A600A48711 /* Controller */ = {
@@ -266,6 +277,25 @@
 				F728472C238AC02D00A48711 /* SYJModalViewController.m */,
 				F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */,
 				F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F76724142392865B003C00AF /* Biometric(生物识别) */ = {
+			isa = PBXGroup;
+			children = (
+				F767241523928674003C00AF /* Controller */,
+				F767241923929340003C00AF /* SYJBiometricManager.h */,
+				F767241A23929340003C00AF /* SYJBiometricManager.m */,
+			);
+			path = "Biometric(生物识别)";
+			sourceTree = "<group>";
+		};
+		F767241523928674003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76724162392869A003C00AF /* SYJBiometricViewController.h */,
+				F76724172392869A003C00AF /* SYJBiometricViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +395,7 @@
 				F728470A238982E400A48711 /* Launch Screen.storyboard in Resources */,
 				F7284720238A53EF00A48711 /* DemoList.plist in Resources */,
 				F72846E22389766D00A48711 /* Assets.xcassets in Resources */,
+				F767241E2392C061003C00AF /* Biometric.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,12 +540,14 @@
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
+				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
 				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
 				F72846E52389766D00A48711 /* main.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
+				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +614,15 @@
 				F728471D23898ED200A48711 /* zh-Hans */,
 			);
 			name = ShortcutItem.strings;
+			sourceTree = "<group>";
+		};
+		F76724202392C061003C00AF /* Biometric.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F767241F2392C061003C00AF /* en */,
+				F76724212392C064003C00AF /* zh-Hans */,
+			);
+			name = Biometric.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -707,14 +749,14 @@
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GCC_PREFIX_HEADER = $SRCROOT/$PRODUCT_NAME/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = DebugingProject/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -727,14 +769,14 @@
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GCC_PREFIX_HEADER = $SRCROOT/$PRODUCT_NAME/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = DebugingProject/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

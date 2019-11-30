@@ -8,5 +8,11 @@
 		<key>clsName</key>
 		<string>SYJTransitioningViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>指纹、人脸识别解锁</string>
+		<key>clsName</key>
+		<string>SYJBiometricViewController</string>
+	</dict>
 </array>
 </plist>

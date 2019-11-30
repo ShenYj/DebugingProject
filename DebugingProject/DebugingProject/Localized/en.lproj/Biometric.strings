@@ -1,0 +1,24 @@
+/* 
+  Biometric.strings
+  DebugingProject
+
+  Created by ShenYj on 2019/11/30.
+  Copyright © 2019 ShenYj. All rights reserved.
+*/
+
+
+"Biometricc_By_Password" = "Enter password manually";
+"Biometricc_Cancel_Title" = "Cancel";
+
+"Biometric_Authen_Success" = "Unlocked successfully";
+"Biometric_Authen_Faild" = "verification failed";
+"Biometric_Authen_User_Cancel" = "Cancel verification";
+"Biometric_Authen_App_Cancel" = "Cancel verification";
+"Biometric_Authen_System_Cancel" = "System interrupt";
+"Biometric_Authen_User_Fallback" = "Choose enter password";
+"Biometric_Authen_Passcode_Notset" = "Password lock is not enabled";
+"Biometric_Authen_Biometry_NotEnrolled" = "Not set TouchID/FaceID";
+"Biometric_Authen_Biometry_NotAvailable" = "TouchID/FaceID unavailable";
+"Biometric_Authen_Biometry_Lockout" = "Multiple verifications fail, TouchID is locked";
+"Biometric_Authen_Biometry_NotInteractive" = "Application is inactive";
+"Biometric_Authen_Biometry_InvalidContext" = "LAContext Object is invalid";

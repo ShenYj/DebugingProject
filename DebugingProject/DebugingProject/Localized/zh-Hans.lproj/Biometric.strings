@@ -1,0 +1,24 @@
+/* 
+  Biometric.strings
+  DebugingProject
+
+  Created by ShenYj on 2019/11/30.
+  Copyright © 2019 ShenYj. All rights reserved.
+*/
+
+
+"Biometricc_By_Password" = "手动输入密码";
+"Biometricc_Cancel_Title" = "取消";
+
+"Biometric_Authen_Success" = "解锁成功";
+"Biometric_Authen_Faild" = "验证失败";
+"Biometric_Authen_User_Cancel" = "取消验证";
+"Biometric_Authen_App_Cancel" = "取消验证";
+"Biometric_Authen_System_Cancel" = "系统中断";
+"Biometric_Authen_User_Fallback" = "选择输入密码";
+"Biometric_Authen_Passcode_Notset" = "未启用密码锁";
+"Biometric_Authen_Biometry_NotEnrolled" = "未设置TouchID/FaceID";
+"Biometric_Authen_Biometry_NotAvailable" = "TouchID/FaceID 不可用";
+"Biometric_Authen_Biometry_Lockout" = "多次验证失败, TouchID被锁定";
+"Biometric_Authen_Biometry_NotInteractive" = "应用处于未激活状态";
+"Biometric_Authen_Biometry_InvalidContext" = "LAContext对象无效";
