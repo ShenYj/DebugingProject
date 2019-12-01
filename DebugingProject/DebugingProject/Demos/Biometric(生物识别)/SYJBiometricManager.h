@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, SYJBiometricType) {
 - (void)evaluatePolicy:(nullable void(^)(BOOL isSuccess, NSString *message))reply;
 
 /// 当前设备支持的生物识别类型
-- (SYJBiometricType)deivceBiometricType;
+- (SYJBiometricType)biometricTypeForThisDevice;
 
 @end
 

@@ -45,6 +45,12 @@
     }
 }
 
+- (SYJBiometricType)biometricTypeForThisDevice
+{
+    _biometricType = [self deivceBiometricType];
+    return _biometricType;
+}
+
 /**
  LABiometryTypeNone API_AVAILABLE(macos(10.13.2), ios(11.2)),
  LABiometryNone API_DEPRECATED_WITH_REPLACEMENT("LABiometryTypeNone", macos(10.13, 10.13.2), ios(11.0, 11.2)) = LABiometryTypeNone,
@@ -52,7 +58,7 @@
  LABiometryTypeTouchID,
  LABiometryTypeFaceID API_AVAILABLE(macos(10.15)),
  */
-/// 当前设备支持的生物识别类型
+/// 当前设备支持的生物识别类型 私有方法
 - (SYJBiometricType)deivceBiometricType
 {
     NSLog(@" TARGET_IPHONE_SIMULATOR: %d", TARGET_IPHONE_SIMULATOR);
@@ -107,7 +113,8 @@
 
 - (void)evaluatePolicy:(nullable void(^)(BOOL isSuccess, NSString *message))reply
 {
-    SYJBiometricType biometricType = [self deivceBiometricType];
+//    SYJBiometricType biometricType = [self deivceBiometricType];
+    SYJBiometricType biometricType = self.biometricType;
     self.biometricType = biometricType;
     switch (biometricType) {
         case SYJBiometricTypeTouchID:

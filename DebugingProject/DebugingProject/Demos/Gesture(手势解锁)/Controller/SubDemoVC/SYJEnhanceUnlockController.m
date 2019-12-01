@@ -15,7 +15,7 @@
 #import "SYJGestureVerifyLabel.h"
 
 
-@interface SYJEnhanceUnlockController ()
+@interface SYJEnhanceUnlockController () <SYJGestureViewDelegate>
 
 /**
  *  重设按钮
@@ -30,7 +30,7 @@
 /**
  *  解锁界面
  */
-@property(nonatomic, strong) SYJGestureView *lockView;
+@property(nonatomic, strong) SYJGestureView *unLockView;
 
 /**
  *  infoView
@@ -52,6 +52,20 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self.view addSubview:self.unLockView];
+    
+}
+
+#pragma mark - SYJGestureViewDelegate
+
+#pragma mark - lazy
+
+- (SYJGestureView *)unLockView {
+    if (!_unLockView) {
+        _unLockView = [[SYJGestureView alloc] init];
+        _unLockView.delegate = self;
+    }
+    return _unLockView;
 }
 
 @end
