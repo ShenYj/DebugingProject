@@ -11,25 +11,16 @@
 
 @interface SYJGestureItemView ()
 
-/**
- *  外环颜色
- */
+/// 外环颜色
 @property (nonatomic, strong) UIColor *outCircleColor;
-
-/**
- *  实心圆颜色
- */
+/// 实心圆颜色
 @property (nonatomic, strong) UIColor *inCircleColor;
-
-/**
- *  三角形颜色
- */
+/// 三角形颜色
 @property (nonatomic, strong) UIColor *trangleColor;
 
 @end
 
 @implementation SYJGestureItemView
-
 
 - (instancetype)init
 {
@@ -39,18 +30,9 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (void)drawRect:(CGRect)rect
 {
-    if (self = [super initWithCoder:aDecoder]) {
-        self.backgroundColor = CircleBackgroundColor;
-    }
-    return self;
-}
-
-- (void)drawRect:(CGRect)rect {
-    
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-    
     CGFloat radio;
     CGRect circleRect = CGRectMake(CircleEdgeWidth, CircleEdgeWidth, rect.size.width - 2 * CircleEdgeWidth, rect.size.height - 2 * CircleEdgeWidth);
     
@@ -59,18 +41,13 @@
     } else {
         radio = 1;
     }
-    
     // 上下文旋转
     [self transFormCtx:ctx rect:rect];
-    
     // 画圆环
     [self drawEmptyCircleWithContext:ctx rect:circleRect color:self.outCircleColor];
-    
     // 画实心圆
     [self drawSolidCircleWithContext:ctx rect:rect radio:radio color:self.inCircleColor];
-    
     if (self.arrow) {
-        
         // 画三角形箭头
         [self drawTrangleWithContext:ctx topPoint:CGPointMake(rect.size.width/2, 10) length:kTrangleLength color:self.trangleColor];
     }
@@ -133,10 +110,9 @@
     CGContextFillPath(ctx);
     CGPathRelease(trianglePathM);
 }
-/*
- *  上下文旋转
- */
--(void)transFormCtx:(CGContextRef)ctx rect:(CGRect)rect{
+/// 上下文旋转
+- (void)transFormCtx:(CGContextRef)ctx rect:(CGRect)rect
+{
     //    if(self.angle == 0) return;
     CGFloat translateXY = rect.size.width * .5f;
     //平移
@@ -146,9 +122,7 @@
     CGContextTranslateCTM(ctx, -translateXY, -translateXY);
 }
 
-/**
- *  圆环绘制颜色的getter
- */
+/// 圆环绘制颜色的getter
 - (UIColor *)outCircleColor
 {
     UIColor *color;
@@ -175,9 +149,7 @@
     return color;
 }
 
-/**
- *  实心圆绘制颜色的getter
- */
+/// 实心圆绘制颜色的getter
 - (UIColor *)inCircleColor
 {
     UIColor *color;
@@ -204,9 +176,7 @@
     return color;
 }
 
-/**
- *  三角形颜色的getter
- */
+/// 三角形颜色的getter
 - (UIColor *)trangleColor
 {
     UIColor *color;
@@ -238,7 +208,6 @@
 - (void)setAngle:(CGFloat)angle
 {
     _angle = angle;
-    
     [self setNeedsDisplay];
 }
 
@@ -248,7 +217,6 @@
 - (void)setRcleState:(CircleState)state
 {
     _RcleState = state;
-    
     [self setNeedsDisplay];
 }
 

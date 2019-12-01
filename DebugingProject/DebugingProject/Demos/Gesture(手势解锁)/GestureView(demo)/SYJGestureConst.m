@@ -19,10 +19,10 @@
 
 + (NSString *)getGestureWithKey:(NSString *)key
 {
-    
     return [[NSUserDefaults standardUserDefaults] objectForKey:key];
 }
-+ (void)releaseGestureWithKey:(NSString *)key{
++ (void)releaseGestureWithKey:(NSString *)key
+{
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
 }
 

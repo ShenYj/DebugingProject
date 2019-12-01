@@ -58,6 +58,9 @@
 
 #pragma mark - SYJGestureViewDelegate
 
+
+
+
 #pragma mark - lazy
 
 - (SYJGestureView *)unLockView {

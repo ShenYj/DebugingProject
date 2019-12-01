@@ -87,7 +87,7 @@
     if (!_enhanceUnlockButton) {
         _enhanceUnlockButton = [[UIButton alloc] init];
         _enhanceUnlockButton.titleLabel.font = [UIFont systemFontOfSize:14];
-        [_enhanceUnlockButton setTitle:@"简单的指纹解锁" forState:UIControlStateNormal];
+        [_enhanceUnlockButton setTitle:@"增强的指纹解锁" forState:UIControlStateNormal];
         [_enhanceUnlockButton setTitle:@"" forState:UIControlStateHighlighted];
         [_enhanceUnlockButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_enhanceUnlockButton setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
