@@ -27,8 +27,8 @@
 
 - (void)biometricAuthenic:(UIBarButtonItem *)sender
 {
-    BOOL supported = [self.biometricManager authenticBiometricForThisDevice];
-    NSLog(@"是否支持生物识别: %@", supported ? @"YES" : @"NO");
+    SYJBiometricType biometricType = [self.biometricManager deivceBiometricType];
+    NSLog(@"是否支持生物识别: %@", biometricType != SYJBiometricTypeUnvailble ? @"YES" : @"NO");
     [self.biometricManager evaluatePolicy:^(BOOL isSuccess, NSString * _Nonnull message) {
         NSLog(@"结果: %@", isSuccess ? @"解锁成功": @"解锁失败");
         NSLog(@"%@", message);

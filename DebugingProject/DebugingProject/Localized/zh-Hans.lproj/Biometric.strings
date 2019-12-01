@@ -12,6 +12,9 @@
 "Biometricc_By_Password" = "手动输入密码";
 "Biometricc_Cancel_Title" = "取消";
 
+"Biometricc_Localized_Reason_FaceID" = "通过面容识别验证已有的FaceID";
+"Biometricc_Localized_Reason_TouchID" = "通过Home键验证已有手机指纹";
+
 "Biometric_Authen_Success" = "解锁成功";
 "Biometric_Authen_Faild" = "验证失败";
 "Biometric_Authen_User_Cancel" = "取消验证";

@@ -11,7 +11,8 @@
 
 @interface SYJBiometricManager ()
 
-@property (nonatomic, strong) LAContext *authenticContext;
+@property (nonatomic, strong) LAContext        *authenticContext;
+@property (nonatomic, assign) SYJBiometricType biometricType;
 
 @end
 
@@ -54,19 +55,29 @@
 /// 当前设备支持的生物识别类型
 - (SYJBiometricType)deivceBiometricType
 {
-    if (IS_IPHONE_PROFILED_FULL_SCREEN) {
-        return SYJBiometricTypeFaceID;
-    }
+    NSLog(@" TARGET_IPHONE_SIMULATOR: %d", TARGET_IPHONE_SIMULATOR);
+    NSLog(@" TARGET_OS_IOS: %d", TARGET_OS_IOS);
+    NSLog(@" TARGET_OS_IPHONE: %d", TARGET_OS_IPHONE);
+    NSLog(@" TARGET_OS_SIMULATOR: %d", TARGET_OS_SIMULATOR);
     
-    if (@available(iOS 11.0, *)) {
+    BOOL supportAuthentic = [self authenticBiometricForThisDevice];
+    if (TARGET_OS_SIMULATOR) return SYJBiometricTypeUnvailble;
+    if (!supportAuthentic) return SYJBiometricTypeUnvailble;
+    if (@available(iOS 11.0, *) ) {
+        // 防止自定义宏无法完全覆盖到FaceID手机, iOS 11用系统API处理
         if (self.authenticContext.biometryType == LABiometryTypeTouchID) {
             return SYJBiometricTypeTouchID;
         }
-    }
-    if ([self authenticBiometricForThisDevice]) {
+        if (self.authenticContext.biometryType == LABiometryTypeFaceID) {
+            return SYJBiometricTypeFaceID;
+        }
+    } else {
+        // iOS 8.0 ~ 10.x && 5s+
+        if (IS_IPHONE_PROFILED_FULL_SCREEN) {
+            return SYJBiometricTypeFaceID;
+        }
         return SYJBiometricTypeTouchID;
     }
-    
     return SYJBiometricTypeUnvailble;
 }
 
@@ -96,7 +107,20 @@
 
 - (void)evaluatePolicy:(nullable void(^)(BOOL isSuccess, NSString *message))reply
 {
-    if (![self authenticBiometricForThisDevice]) {
+    SYJBiometricType biometricType = [self deivceBiometricType];
+    self.biometricType = biometricType;
+    switch (biometricType) {
+        case SYJBiometricTypeTouchID:
+            NSLog(@"SYJBiometricTypeTouchID");
+            break;
+        case SYJBiometricTypeFaceID:
+            NSLog(@"SYJBiometricTypeFaceID");
+            break;
+        default:
+            NSLog(@"SYJBiometricTypeUnvailble");
+            break;
+    }
+    if (biometricType == SYJBiometricTypeUnvailble) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSString *notAvailable = NSLocalizedStringFromTable(@"Biometric_Authen_Biometry_NotAvailable", @"Biometric", @"TouchID/FaceID 不可用");
             if (reply) reply(NO, notAvailable);
@@ -105,11 +129,17 @@
     }
     
     LAPolicy policy;
-    NSString *localizedReason = @"";
+    NSString *localizedReason = @" ";
     if (@available(iOS 9.0, *)) {
         // 三次指纹验证失败, 可通过系统密码解锁
         policy = LAPolicyDeviceOwnerAuthentication;
-        localizedReason = NSLocalizedStringFromTable(@"Biometricc_By_Password", @"Biometric", @"手动输入密码");
+        if (self.biometricType == SYJBiometricTypeFaceID){
+            // 两次失败后才会显示
+            localizedReason = NSLocalizedStringFromTable(@"Biometricc_Localized_Reason_FaceID", @"Biometric", @"FaceID");
+        }
+        if (self.biometricType == SYJBiometricTypeTouchID) {
+            localizedReason = NSLocalizedStringFromTable(@"Biometricc_Localized_Reason_TouchID", @"Biometric", @"TouchID");
+        }
     } else {
         // 三次指纹验证失败, 直接失败回调
         policy = LAPolicyDeviceOwnerAuthenticationWithBiometrics;

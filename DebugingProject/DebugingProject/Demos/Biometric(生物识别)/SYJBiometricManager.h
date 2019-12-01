@@ -23,8 +23,6 @@ typedef NS_ENUM(NSUInteger, SYJBiometricType) {
 /// TouchID or FaceID or 密码验证, 内部已做了支持检查, 线程安全
 - (void)evaluatePolicy:(nullable void(^)(BOOL isSuccess, NSString *message))reply;
 
-/// 验证设备是否支持 Touch ID / Face ID 验证
-- (BOOL)authenticBiometricForThisDevice;
 /// 当前设备支持的生物识别类型
 - (SYJBiometricType)deivceBiometricType;
 

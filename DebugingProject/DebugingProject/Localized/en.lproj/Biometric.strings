@@ -11,6 +11,9 @@
 "Biometricc_By_Password" = "Enter password manually";
 "Biometricc_Cancel_Title" = "Cancel";
 
+"Biometricc_Localized_Reason_FaceID" = "Verify existing FaceID";
+"Biometricc_Localized_Reason_TouchID" = "Verify fingerprint with Home button";
+
 "Biometric_Authen_Success" = "Unlocked successfully";
 "Biometric_Authen_Faild" = "verification failed";
 "Biometric_Authen_User_Cancel" = "Cancel verification";
