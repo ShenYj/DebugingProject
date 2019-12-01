@@ -14,5 +14,11 @@
 		<key>clsName</key>
 		<string>SYJBiometricViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>手势解锁</string>
+		<key>clsName</key>
+		<string>SYJGestureViewController</string>
+	</dict>
 </array>
 </plist>
