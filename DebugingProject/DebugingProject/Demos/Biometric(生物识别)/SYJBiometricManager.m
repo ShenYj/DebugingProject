@@ -44,6 +44,32 @@
     }
 }
 
+/**
+ LABiometryTypeNone API_AVAILABLE(macos(10.13.2), ios(11.2)),
+ LABiometryNone API_DEPRECATED_WITH_REPLACEMENT("LABiometryTypeNone", macos(10.13, 10.13.2), ios(11.0, 11.2)) = LABiometryTypeNone,
+ 
+ LABiometryTypeTouchID,
+ LABiometryTypeFaceID API_AVAILABLE(macos(10.15)),
+ */
+/// 当前设备支持的生物识别类型
+- (SYJBiometricType)deivceBiometricType
+{
+    if (IS_IPHONE_PROFILED_FULL_SCREEN) {
+        return SYJBiometricTypeFaceID;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        if (self.authenticContext.biometryType == LABiometryTypeTouchID) {
+            return SYJBiometricTypeTouchID;
+        }
+    }
+    if ([self authenticBiometricForThisDevice]) {
+        return SYJBiometricTypeTouchID;
+    }
+    
+    return SYJBiometricTypeUnvailble;
+}
+
 - (BOOL)authenticBiometricForThisDevice
 {
     /**   判断是否支持密码验证

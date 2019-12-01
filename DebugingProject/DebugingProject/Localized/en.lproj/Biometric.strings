@@ -5,7 +5,8 @@
   Created by ShenYj on 2019/11/30.
   Copyright © 2019 ShenYj. All rights reserved.
 */
-
+"Biometric_FaceID" = "FaceID";
+"Biometric_TouchID" = "TouchID";
 
 "Biometricc_By_Password" = "Enter password manually";
 "Biometricc_Cancel_Title" = "Cancel";

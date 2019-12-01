@@ -6,6 +6,8 @@
   Copyright © 2019 ShenYj. All rights reserved.
 */
 
+"Biometric_FaceID" = "FaceID";
+"Biometric_TouchID" = "TouchID";
 
 "Biometricc_By_Password" = "手动输入密码";
 "Biometricc_Cancel_Title" = "取消";
