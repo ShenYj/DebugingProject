@@ -126,7 +126,7 @@
 - (UIColor *)outCircleColor
 {
     UIColor *color;
-    switch (self.RcleState) {
+    switch (self.circleState) {
         case CircleStateNormal:
             color = CircleStateNormalOutsideColor;
             break;
@@ -153,7 +153,7 @@
 - (UIColor *)inCircleColor
 {
     UIColor *color;
-    switch (self.RcleState) {
+    switch (self.circleState) {
         case CircleStateNormal:
             color = CircleStateNormalInsideColor;
             break;
@@ -180,7 +180,7 @@
 - (UIColor *)trangleColor
 {
     UIColor *color;
-    switch (self.RcleState) {
+    switch (self.circleState) {
         case CircleStateNormal:
             color = CircleStateNormalTrangleColor;
             break;
@@ -202,25 +202,19 @@
     }
     return color;
 }
-/**
- *  重写angle的setter
- */
+
+
 - (void)setAngle:(CGFloat)angle
 {
     _angle = angle;
     [self setNeedsDisplay];
 }
 
-/**
- *  重写state Setter
- */
-- (void)setRcleState:(CircleState)state
+- (void)setCircleState:(CircleState)circleState
 {
-    _RcleState = state;
+    _circleState = circleState;
     [self setNeedsDisplay];
 }
-
-
 
 
 @end

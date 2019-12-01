@@ -31,7 +31,8 @@ typedef NS_ENUM(NSUInteger, CircleType) {
 @interface SYJGestureItemView : UIView
 
 /// 所处的状态
-@property (nonatomic, assign) CircleState RcleState;
+@property (nonatomic, assign) CircleState circleState;
+//@property (nonatomic, assign) CircleState RcleState;
 /// 类型
 @property (nonatomic, assign) CircleType  type;
 /// 是否有箭头 default is YES

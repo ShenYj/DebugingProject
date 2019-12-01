@@ -37,15 +37,15 @@
 		F7672431239380C8003C00AF /* gesture_node_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F767242F239380C8003C00AF /* gesture_node_normal.png */; };
 		F7672432239380C8003C00AF /* gesture_node_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7672430239380C8003C00AF /* gesture_node_normal@2x.png */; };
 		F7672434239380D0003C00AF /* Home_refresh_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F7672433239380D0003C00AF /* Home_refresh_bg.png */; };
-		F767243823938963003C00AF /* SYJGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243723938963003C00AF /* SYJGestureView.m */; };
 		F767243B23938970003C00AF /* SYJGestureConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243A23938970003C00AF /* SYJGestureConst.m */; };
-		F767243E23938B76003C00AF /* SYJGestureItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243D23938B76003C00AF /* SYJGestureItemView.m */; };
 		F76724412393BE8E003C00AF /* SYJGestureVerifyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724402393BE8E003C00AF /* SYJGestureVerifyLabel.m */; };
 		F76724442393C098003C00AF /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724432393C098003C00AF /* UIColor+Extension.m */; };
 		F76724482393C186003C00AF /* CALayer+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724472393C186003C00AF /* CALayer+Shake.m */; };
 		F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = F767244A2393CC8A003C00AF /* SYJGesturePreview.m */; };
 		F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767244E2393E338003C00AF /* SYJBasicUnlockController.m */; };
 		F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */; };
+		F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243723938963003C00AF /* SYJGestureView.m */; };
+		F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243D23938B76003C00AF /* SYJGestureItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -659,12 +659,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */,
+				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
-				F767243823938963003C00AF /* SYJGestureView.m in Sources */,
 				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
 				F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */,
 				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
@@ -676,7 +677,6 @@
 				F76724412393BE8E003C00AF /* SYJGestureVerifyLabel.m in Sources */,
 				F72846E52389766D00A48711 /* main.m in Sources */,
 				F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */,
-				F767243E23938B76003C00AF /* SYJGestureItemView.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
 				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
 				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
