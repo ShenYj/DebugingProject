@@ -46,6 +46,9 @@
 		F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */; };
 		F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243723938963003C00AF /* SYJGestureView.m */; };
 		F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243D23938B76003C00AF /* SYJGestureItemView.m */; };
+		F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724582397F362003C00AF /* SYJCollectionsController.m */; };
+		F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */; };
+		F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +139,12 @@
 		F767244E2393E338003C00AF /* SYJBasicUnlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBasicUnlockController.m; sourceTree = "<group>"; };
 		F76724502393E441003C00AF /* SYJEnhanceUnlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJEnhanceUnlockController.h; sourceTree = "<group>"; };
 		F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJEnhanceUnlockController.m; sourceTree = "<group>"; };
+		F76724572397F362003C00AF /* SYJCollectionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionsController.h; sourceTree = "<group>"; };
+		F76724582397F362003C00AF /* SYJCollectionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionsController.m; sourceTree = "<group>"; };
+		F767245B2397F4E1003C00AF /* SYJCollectionsLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionsLayout.h; sourceTree = "<group>"; };
+		F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionsLayout.m; sourceTree = "<group>"; };
+		F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionHeaderView.h; sourceTree = "<group>"; };
+		F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +307,7 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F76724552397F31D003C00AF /* Collections */,
 				F767242223937A2E003C00AF /* Gesture(手势解锁) */,
 				F76724142392865B003C00AF /* Biometric(生物识别) */,
 				F7284726238AB79600A48711 /* Transition(转场) */,
@@ -416,6 +426,35 @@
 				F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */,
 			);
 			path = SubDemoVC;
+			sourceTree = "<group>";
+		};
+		F76724552397F31D003C00AF /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				F767245A2397F49A003C00AF /* View */,
+				F76724562397F34B003C00AF /* Controller */,
+				F767245B2397F4E1003C00AF /* SYJCollectionsLayout.h */,
+				F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		F76724562397F34B003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76724572397F362003C00AF /* SYJCollectionsController.h */,
+				F76724582397F362003C00AF /* SYJCollectionsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767245A2397F49A003C00AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */,
+				F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,6 +701,8 @@
 				F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */,
 				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
+				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
+				F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
@@ -681,6 +722,7 @@
 				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
 				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
 				F76724482393C186003C00AF /* CALayer+Shake.m in Sources */,
+				F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */,
 				F767242923937CB5003C00AF /* SYJGestureUnlockView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

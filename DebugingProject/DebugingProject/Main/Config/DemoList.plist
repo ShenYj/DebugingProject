@@ -20,5 +20,11 @@
 		<key>clsName</key>
 		<string>SYJGestureViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>可编辑的CollectionView Demo</string>
+		<key>clsName</key>
+		<string>SYJCollectionsController</string>
+	</dict>
 </array>
 </plist>
