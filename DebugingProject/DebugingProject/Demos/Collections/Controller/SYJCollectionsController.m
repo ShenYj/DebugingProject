@@ -174,38 +174,39 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
     }
     // 2.2 不同section编辑, section 1 -> section 0 允许
     NSLog(@"目标位置: %zd", destinationIndexPath.item);
-    if (destinArray.count < 8) {
-        // 不足, 插入
-        NSLog(@"不足8个, 插入 ");
-    }
-    else {
-        // 多余8个, 移除最后一个
-        NSLog(@"多余8个了, 移除最后一个");
-    }
-    
-    if (destinationIndexPath.item > destinArray.count - 1) {
+    // 插入最后一个不存在的位置:越界处理
+    if (destinationIndexPath.item > destinArray.count - 1 ) {
         if (destinArray.count >= 8) {
-            // 2.2.1 插入最后一个不存在的位置 && section 满8个 不可插入
-            [self.collections reloadData];
+            // 2.2.1  section 满8个 不可插入
+            NSLog(@"插入最后一个不存在的位置, 满8个不可插入");
         }
         else {
-            // 2.2.2 插入最后一个不存在的位置 && section 不满8个 可插入
+            // 2.2.2  section 不满8个 可插入
             [destinArray addObject:toDesItem];
             [sourceArray removeObjectAtIndex:sourceIndexPath.item];
             self.dataSources = @[destinArray.copy, sourceArray];
+            NSLog(@"插入最后一个不存在的位置, 不满8个, 插到目标集合最后位置, 并移除源的最后一个");
         }
+        [self.collections reloadData];
         return;
     }
     else {
         toSouItem = destinArray[destinationIndexPath.item];
     }
-    
     // 2.3. 不同section编辑, section 1 -插入-> section 0
+    NSLog(@"不同组交换, 1 -> 0");
     toSouItem   = destinArray.lastObject;
-    [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
-    [sourceArray addObject:toSouItem];
-    [sourceArray removeObjectAtIndex:sourceIndexPath.item];
-    [destinArray removeLastObject];
+    if (destinArray.count < 8) {
+        [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
+        [sourceArray removeObjectAtIndex:sourceIndexPath.item];
+    }
+    else {
+        // 满8 交换
+        [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
+        [sourceArray removeObjectAtIndex:sourceIndexPath.item];
+        [sourceArray addObject:toSouItem];
+        [destinArray removeLastObject];
+    }
     
     self.dataSources = @[destinArray.copy, sourceArray.copy];
     [self.collections reloadData];
