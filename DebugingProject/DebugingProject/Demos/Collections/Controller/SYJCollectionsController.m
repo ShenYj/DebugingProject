@@ -169,6 +169,7 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
     // 2 不同组编辑顺序, 注:可能越界
     // 2.1 不同section编辑, section 0 -> section 1 不允许
     if (destinationIndexPath.section == 1) {
+        NSLog(@" 0->1 不允许 [%zd-->%zd]", sourceIndexPath.item , destinationIndexPath.item);
         [self.collections reloadData];
         return;
     }
@@ -197,7 +198,7 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
     NSLog(@"不同组交换, 1 -> 0");
     [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
     [sourceArray removeObjectAtIndex:sourceIndexPath.item];
-    if (destinArray.count >= 8) {
+    if (destinArray.count > 8) {
         // 满8 交换
         toSouItem = destinArray.lastObject;
         [sourceArray addObject:toSouItem];
