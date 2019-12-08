@@ -95,8 +95,7 @@
 {
     return
     @[
-        @{ kShareIcon:@"share_artbox", kShareTitle:@"转发"},
-        @{ kShareIcon:@"share_artchat", kShareTitle:@"艺信好友"}
+        @{ kShareIcon:@"share_artbox", kShareTitle: @"转发", kShareType: @"ShareTypeForward"},
     ];
 }
 
@@ -104,14 +103,11 @@
 {
     return
     @[
-        @{ kShareIcon:@"share_qqzone", kShareTitle:@"QQ空间"},
-        @{ kShareIcon:@"share_qq", kShareTitle:@"QQ好友"},
-        @{ kShareIcon:@"share_timeline", kShareTitle:@"微信朋友圈"},
-        @{ kShareIcon:@"share_wechat", kShareTitle:@"微信好友"},
-        @{ kShareIcon:@"share_weibo", kShareTitle:@"微博"},
-        @{ kShareIcon:@"share_timeline", kShareTitle:@"微信朋友圈"},
-        @{ kShareIcon:@"share_wechat", kShareTitle:@"微信好友"},
-        @{ kShareIcon:@"share_weibo", kShareTitle:@"微博"}
+        @{ kShareIcon:@"share_qqzone", kShareTitle:@"QQ空间", kShareType: @"ShareTypeQQZone"},
+        @{ kShareIcon:@"share_qq", kShareTitle:@"QQ好友", kShareType: @"ShareTypeQQFriends"},
+        @{ kShareIcon:@"share_wechat", kShareTitle:@"微信好友", kShareType: @"ShareTypeWeChatFriends"},
+        @{ kShareIcon:@"share_timeline", kShareTitle:@"微信朋友圈", kShareType: @"ShareTypeWeChatCircleOfFriends"},
+        @{ kShareIcon:@"share_weibo", kShareTitle:@"微博", kShareType: @"ShareTypeWeibo"}
     ];
     
 }

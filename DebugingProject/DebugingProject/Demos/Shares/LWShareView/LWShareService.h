@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, ShareType) {
+    ShareTypeForward       = 9110,
+    ShareTypeWeChatFriends,
+    ShareTypeWeChatCircleOfFriends,
+    ShareTypeWeibo,
+    ShareTypeQQFriends,
+    ShareTypeQQZone,
+};
+
 @interface LWShareService : NSObject
 
 @property (nonatomic, copy) void (^shareBtnClickBlock)(NSIndexPath *index);

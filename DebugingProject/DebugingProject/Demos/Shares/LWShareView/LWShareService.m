@@ -74,15 +74,19 @@
         if (weakSelf.shareBtnClickBlock) {
             weakSelf.shareBtnClickBlock(index);
         }
-        [weakSelf hideSheetView];
+        [weakSelf removeSheetView:NO];
     };
     [self.sheetView.cancelBtn addTarget:self action:@selector(hideSheetView) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)hideSheetView
 {
-    CGRect frame = self.sheetView.frame;
+    [self removeSheetView:YES];
+}
+- (void)removeSheetView:(BOOL)canceled
+{
     __weak typeof(self) weakSelf = self;
+    CGRect frame = self.sheetView.frame;
     [UIView animateWithDuration:0.61 delay:0 usingSpringWithDamping:1 initialSpringVelocity:0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         CGFloat y = [UIScreen mainScreen].bounds.size.height ;
         self.sheetView.frame = CGRectMake(frame.origin.x, y, frame.size.width, frame.size.height);
@@ -91,7 +95,7 @@
         self.sheetView = nil;
         self.isShowing = NO;
         [self.maskView removeFromSuperview];
-        if (weakSelf.shareBtnCancelBlock) {
+        if (weakSelf.shareBtnCancelBlock && canceled) {
             weakSelf.shareBtnCancelBlock();
         }
     }];
