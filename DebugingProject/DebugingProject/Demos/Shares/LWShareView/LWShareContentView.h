@@ -17,6 +17,6 @@ UIKIT_EXTERN NSString * const kShareType;
 //防止按钮的数组 
 @property (nonatomic, strong) NSArray *topMenus;
 @property (nonatomic, strong) NSArray *bottomMenus;
-@property (nonatomic, copy) void (^shareBtnClickBlock)(NSIndexPath *index);
+@property (nonatomic, copy) void (^shareBtnClickBlock)(NSIndexPath *index, NSString *shareTypeStr);
 
 @end

@@ -11,5 +11,6 @@
 @interface LWShareButton : UIButton
 
 @property (nonatomic, strong) NSIndexPath *indexPath;
+@property (nonatomic, assign) NSString    *shareType;
 
 @end

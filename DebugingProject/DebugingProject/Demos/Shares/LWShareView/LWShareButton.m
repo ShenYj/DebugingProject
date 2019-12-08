@@ -16,7 +16,7 @@
     if (self = [super init]) {
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
-        self.titleLabel.font = [UIFont systemFontOfSize:10];
+        self.titleLabel.font = [UIFont systemFontOfSize:9];
         [self setTitleColor:[UIColor colorWithRGBHex:0x999999] forState:UIControlStateNormal];
         self.backgroundColor = [UIColor whiteColor];
     }

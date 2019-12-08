@@ -25,10 +25,6 @@ CGFloat kItemHeight = 74;
 
 #define kItemWidth (([UIScreen mainScreen].bounds.size.width) - kMargin * 2 - kPadding * 2-kMinimumInteritemSpacing*4) / 5
 
-//#define UI_IS_IPHONE            ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-//#define UI_IS_IPHONE6PLUS       (UI_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 736.0 || [[UIScreen mainScreen] bounds].size.width == 736.0) // Both orientations
-
-
 @interface LWShareContentView () <UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *topCollectionView;
 @property (nonatomic, strong) UICollectionView *bottomCollectionView;
@@ -98,7 +94,7 @@ CGFloat kItemHeight = 74;
     LWShareButton *shareButton = (LWShareButton *)sender;
     NSIndexPath *indexPath = shareButton.indexPath;
     if (self.shareBtnClickBlock) {
-        self.shareBtnClickBlock(indexPath);
+        self.shareBtnClickBlock(indexPath, shareButton.shareType.copy);
     }
 }
 
@@ -118,6 +114,7 @@ CGFloat kItemHeight = 74;
     LWShareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LWShareCollectionViewCell" forIndexPath:indexPath];
     NSDictionary *item = menus[indexPath.item];
     cell.shareBtn.indexPath = indexPath;
+    cell.shareBtn.shareType = item[kShareType];
     [cell.shareBtn setTitle:item[kShareTitle] forState:UIControlStateNormal];
     [cell.shareBtn setImage:[UIImage imageNamed:item[kShareIcon]] forState:UIControlStateNormal];
     [cell.shareBtn addTarget:self action:@selector(clickShareItem:) forControlEvents:UIControlEventTouchUpInside];

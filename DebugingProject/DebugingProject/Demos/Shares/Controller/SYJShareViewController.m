@@ -38,8 +38,8 @@
 
 - (void)targetShareButton:(UIButton *)sender
 {
-    [LWShareService shared].shareBtnClickBlock = ^(NSIndexPath *index) {
-        NSLog(@"%@ (%s)", index, __func__);
+    [LWShareService shared].shareBtnClickBlock = ^(NSIndexPath *index, ShareType shareType) {
+        NSLog(@"%zd", shareType);
     };
     [LWShareService shared].shareBtnCancelBlock = ^(){
         NSLog(@"取消");

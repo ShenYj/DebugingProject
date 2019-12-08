@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface LWShareSheetView : UIView
-@property (nonatomic, copy) void (^shareBtnClickBlock)(NSIndexPath *index);
+@property (nonatomic, copy) void (^shareBtnClickBlock)(NSIndexPath *index, NSString *shareTypeStr);
 @property (nonatomic, strong) UIButton *cancelBtn;
 
 + (NSInteger)sectionCount;

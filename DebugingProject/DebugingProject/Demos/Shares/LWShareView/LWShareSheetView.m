@@ -41,7 +41,7 @@
     }];
 }
 
-- (void)setShareBtnClickBlock:(void (^)(NSIndexPath *))shareBtnClickBlock
+- (void)setShareBtnClickBlock:(void (^)(NSIndexPath *, NSString *))shareBtnClickBlock
 {
     _shareBtnClickBlock = shareBtnClickBlock;
     self.contentView.shareBtnClickBlock = shareBtnClickBlock;

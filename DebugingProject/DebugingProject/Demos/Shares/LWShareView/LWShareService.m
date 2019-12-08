@@ -66,18 +66,18 @@
     } completion:^(BOOL finished) {
         
     }];
-    
-    
-//    self.sheetView.shareBtnClickBlock = self.shareBtnClickBlock;
+
     __weak typeof(self) weakSelf = self;
-    self.sheetView.shareBtnClickBlock = ^(NSIndexPath *index) {
+    self.sheetView.shareBtnClickBlock = ^(NSIndexPath *index, NSString *shareTypeStr) {
         if (weakSelf.shareBtnClickBlock) {
-            weakSelf.shareBtnClickBlock(index);
+            ShareType type = [weakSelf selectShareType:shareTypeStr];
+            weakSelf.shareBtnClickBlock(index, type);
         }
         [weakSelf removeSheetView:NO];
     };
     [self.sheetView.cancelBtn addTarget:self action:@selector(hideSheetView) forControlEvents:UIControlEventTouchUpInside];
 }
+
 
 - (void)hideSheetView
 {
@@ -101,6 +101,27 @@
     }];
 }
 
+- (ShareType)selectShareType:(NSString *)shareTypeStr
+{
+    if ([shareTypeStr isEqualToString:@"ShareTypeForward"]) {
+        return ShareTypeForward;
+    }
+    else if ([shareTypeStr isEqualToString:@"ShareTypeWeChatFriends"]) {
+        return ShareTypeWeChatFriends;
+    }
+    else if ([shareTypeStr isEqualToString:@"ShareTypeWeChatCircleOfFriends"]) {
+        return ShareTypeWeChatCircleOfFriends;
+    }
+    else if ([shareTypeStr isEqualToString:@"ShareTypeWeibo"]) {
+        return ShareTypeWeibo;
+    }
+    else if ([shareTypeStr isEqualToString:@"ShareTypeQQFriends"]) {
+        return ShareTypeQQFriends;
+    }
+    else {
+        return ShareTypeQQZone;
+    }
+}
 
 #pragma mark - Lazy Load
 
