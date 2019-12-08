@@ -26,5 +26,11 @@
 		<key>clsName</key>
 		<string>SYJCollectionsController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>分享demo</string>
+		<key>clsName</key>
+		<string>SYJShareViewController</string>
+	</dict>
 </array>
 </plist>

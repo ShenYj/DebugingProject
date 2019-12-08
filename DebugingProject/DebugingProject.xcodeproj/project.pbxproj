@@ -50,6 +50,14 @@
 		F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */; };
 		F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */; };
 		F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */; };
+		F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672468239D1DDB003C00AF /* SYJShareViewController.m */; };
+		F7672476239D1F34003C00AF /* LWShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F767246F239D1F34003C00AF /* LWShareButton.m */; };
+		F7672477239D1F34003C00AF /* Share.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7672470239D1F34003C00AF /* Share.xcassets */; };
+		F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672471239D1F34003C00AF /* LWShareSheetView.m */; };
+		F7672479239D1F34003C00AF /* LWShareService.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672472239D1F34003C00AF /* LWShareService.m */; };
+		F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672473239D1F34003C00AF /* LWShareContentView.m */; };
+		F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */; };
+		F767247E239D2876003C00AF /* UIColor+LW.m in Sources */ = {isa = PBXBuildFile; fileRef = F767247C239D2876003C00AF /* UIColor+LW.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +156,21 @@
 		F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionHeaderView.m; sourceTree = "<group>"; };
 		F7672461239BDADC003C00AF /* SYJCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionViewCell.h; sourceTree = "<group>"; };
 		F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionViewCell.m; sourceTree = "<group>"; };
+		F7672467239D1DDB003C00AF /* SYJShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJShareViewController.h; sourceTree = "<group>"; };
+		F7672468239D1DDB003C00AF /* SYJShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJShareViewController.m; sourceTree = "<group>"; };
+		F767246B239D1F34003C00AF /* LWShareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareCollectionViewCell.h; sourceTree = "<group>"; };
+		F767246C239D1F34003C00AF /* LWShareContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareContentView.h; sourceTree = "<group>"; };
+		F767246D239D1F34003C00AF /* LWShareService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareService.h; sourceTree = "<group>"; };
+		F767246E239D1F34003C00AF /* LWShareSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareSheetView.h; sourceTree = "<group>"; };
+		F767246F239D1F34003C00AF /* LWShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareButton.m; sourceTree = "<group>"; };
+		F7672470239D1F34003C00AF /* Share.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Share.xcassets; sourceTree = "<group>"; };
+		F7672471239D1F34003C00AF /* LWShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareSheetView.m; sourceTree = "<group>"; };
+		F7672472239D1F34003C00AF /* LWShareService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareService.m; sourceTree = "<group>"; };
+		F7672473239D1F34003C00AF /* LWShareContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareContentView.m; sourceTree = "<group>"; };
+		F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareCollectionViewCell.m; sourceTree = "<group>"; };
+		F7672475239D1F34003C00AF /* LWShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareButton.h; sourceTree = "<group>"; };
+		F767247C239D2876003C00AF /* UIColor+LW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LW.m"; sourceTree = "<group>"; };
+		F767247D239D2876003C00AF /* UIColor+LW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LW.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +333,7 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F7672464239D1DB1003C00AF /* Shares */,
 				F76724552397F31D003C00AF /* Collections */,
 				F767242223937A2E003C00AF /* Gesture(手势解锁) */,
 				F76724142392865B003C00AF /* Biometric(生物识别) */,
@@ -462,6 +486,44 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F7672464239D1DB1003C00AF /* Shares */ = {
+			isa = PBXGroup;
+			children = (
+				F767246A239D1F34003C00AF /* LWShareView */,
+				F7672465239D1DC0003C00AF /* Controller */,
+			);
+			path = Shares;
+			sourceTree = "<group>";
+		};
+		F7672465239D1DC0003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7672467239D1DDB003C00AF /* SYJShareViewController.h */,
+				F7672468239D1DDB003C00AF /* SYJShareViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767246A239D1F34003C00AF /* LWShareView */ = {
+			isa = PBXGroup;
+			children = (
+				F767246D239D1F34003C00AF /* LWShareService.h */,
+				F7672472239D1F34003C00AF /* LWShareService.m */,
+				F767246E239D1F34003C00AF /* LWShareSheetView.h */,
+				F7672471239D1F34003C00AF /* LWShareSheetView.m */,
+				F767246C239D1F34003C00AF /* LWShareContentView.h */,
+				F7672473239D1F34003C00AF /* LWShareContentView.m */,
+				F7672475239D1F34003C00AF /* LWShareButton.h */,
+				F767246F239D1F34003C00AF /* LWShareButton.m */,
+				F767246B239D1F34003C00AF /* LWShareCollectionViewCell.h */,
+				F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */,
+				F767247D239D2876003C00AF /* UIColor+LW.h */,
+				F767247C239D2876003C00AF /* UIColor+LW.m */,
+				F7672470239D1F34003C00AF /* Share.xcassets */,
+			);
+			path = LWShareView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -555,6 +617,7 @@
 				F72846E42389766D00A48711 /* Main.storyboard in Resources */,
 				F72846FD23897FA600A48711 /* InfoPlist.strings in Resources */,
 				F728471A23898ED000A48711 /* ShortcutItem.strings in Resources */,
+				F7672477239D1F34003C00AF /* Share.xcassets in Resources */,
 				F728470A238982E400A48711 /* Launch Screen.storyboard in Resources */,
 				F7672431239380C8003C00AF /* gesture_node_normal.png in Resources */,
 				F767242E239380BE003C00AF /* gesture_node_highlighted@2x.png in Resources */,
@@ -703,13 +766,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F767247E239D2876003C00AF /* UIColor+LW.m in Sources */,
 				F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */,
+				F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */,
 				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
+				F7672479239D1F34003C00AF /* LWShareService.m in Sources */,
 				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
 				F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */,
+				F7672476239D1F34003C00AF /* LWShareButton.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
+				F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
 				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
@@ -718,6 +786,7 @@
 				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
 				F767243B23938970003C00AF /* SYJGestureConst.m in Sources */,
 				F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */,
+				F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
@@ -726,6 +795,7 @@
 				F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
 				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
+				F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */,
 				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
 				F76724482393C186003C00AF /* CALayer+Shake.m in Sources */,
 				F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */,
