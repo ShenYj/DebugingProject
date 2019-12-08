@@ -24,7 +24,7 @@ CGFloat const kRowItemCount = 4;
     self.collectionView.showsHorizontalScrollIndicator = NO;
     self.headerReferenceSize = CGSizeMake(SCREEN_WIDTH, 60);
     if (@available(iOS 9.0, *)) {
-        self.sectionHeadersPinToVisibleBounds = YES;
+//        self.sectionHeadersPinToVisibleBounds = YES;
     } else {
         // Fallback on earlier versions
     }

@@ -49,6 +49,7 @@
 		F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724582397F362003C00AF /* SYJCollectionsController.m */; };
 		F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */; };
 		F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */; };
+		F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,8 @@
 		F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionsLayout.m; sourceTree = "<group>"; };
 		F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionHeaderView.h; sourceTree = "<group>"; };
 		F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionHeaderView.m; sourceTree = "<group>"; };
+		F7672461239BDADC003C00AF /* SYJCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionViewCell.h; sourceTree = "<group>"; };
+		F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +456,8 @@
 			children = (
 				F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */,
 				F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */,
+				F7672461239BDADC003C00AF /* SYJCollectionViewCell.h */,
+				F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -706,6 +711,7 @@
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
+				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
 				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
 				F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */,
