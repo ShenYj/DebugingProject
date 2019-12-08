@@ -19,6 +19,8 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
 
 @property (nonatomic, strong) NSArray <NSArray *>*dataSources;
 
+@property (nonatomic, assign) BOOL editing;
+
 @end
 
 @implementation SYJCollectionsController
@@ -55,6 +57,7 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
 
 - (void)reloadCollectionView:(UIBarButtonItem *)sender
 {
+    self.editing = !self.editing;
     [self.collections reloadData];
 }
 
@@ -122,6 +125,7 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
 {
     SYJCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCollectionReusedID forIndexPath:indexPath];
     cell.label.text = self.dataSources[indexPath.section][indexPath.row];
+    cell.isEditing = self.editing;
     return cell;
 }
 
@@ -219,7 +223,7 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
         _collections = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[[SYJCollectionsLayout alloc] init]];
         _collections.backgroundColor = [UIColor whiteColor];
         _collections.dataSource = self;
-        
+        _collections.delegate   = self;
     }
     return _collections;
 }

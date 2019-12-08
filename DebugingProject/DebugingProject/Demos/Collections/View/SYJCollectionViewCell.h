@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SYJCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, assign) BOOL    isEditing;
 
 @end
 
