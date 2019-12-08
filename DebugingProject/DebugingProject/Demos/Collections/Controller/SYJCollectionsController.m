@@ -148,11 +148,12 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
     NSMutableArray *destinArray = [NSMutableArray arrayWithArray:self.dataSources[destinationIndexPath.section]];
     
     NSString *toDesItem = sourceArray[sourceIndexPath.item];
-    NSString *toSouItem = destinArray[destinationIndexPath.item];
+    NSString *toSouItem = nil;
     
-    
+    // 1. 同组数据编辑顺序
     if (sourceIndexPath.section == destinationIndexPath.section) {
-        // 1. 同组数据编辑顺序
+        toSouItem = destinArray[destinationIndexPath.item];
+        
         sourceArray[destinationIndexPath.item] = toDesItem;
         sourceArray[sourceIndexPath.item]      = toSouItem;
         
@@ -162,23 +163,44 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
         else {
             self.dataSources = @[self.dataSources[1], sourceArray.copy];
         }
-        
         [self.collections reloadSections:[NSIndexSet indexSetWithIndex:sourceIndexPath.section]];
         return;
     }
-    
+    // 2 不同组编辑顺序, 注:可能越界
+    // 2.1 不同section编辑, section 0 -> section 1 不允许
     if (destinationIndexPath.section == 1) {
-        // 2. section 0 -> section 1
         [self.collections reloadData];
         return;
+    }
+    // 2.2 不同section编辑, section 1 -> section 0 允许
+    NSLog(@"目标位置: %zd", destinationIndexPath.item);
+    if (destinArray.count < 8) {
+        // 不足, 插入
+        NSLog(@"不足8个, 插入 ");
+    }
+    else {
+        // 多余8个, 移除最后一个
+        NSLog(@"多余8个了, 移除最后一个");
     }
     
-    if (destinationIndexPath.item >= destinArray.count - 1) {
-        // 3. 放在组后一个不处理
-        [self.collections reloadData];
+    if (destinationIndexPath.item > destinArray.count - 1) {
+        if (destinArray.count >= 8) {
+            // 2.2.1 插入最后一个不存在的位置 && section 满8个 不可插入
+            [self.collections reloadData];
+        }
+        else {
+            // 2.2.2 插入最后一个不存在的位置 && section 不满8个 可插入
+            [destinArray addObject:toDesItem];
+            [sourceArray removeObjectAtIndex:sourceIndexPath.item];
+            self.dataSources = @[destinArray.copy, sourceArray];
+        }
         return;
     }
-    // 4. section 1 -插入-> section 0
+    else {
+        toSouItem = destinArray[destinationIndexPath.item];
+    }
+    
+    // 2.3. 不同section编辑, section 1 -插入-> section 0
     toSouItem   = destinArray.lastObject;
     [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
     [sourceArray addObject:toSouItem];
@@ -213,10 +235,10 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
                 @"52",
                 @"53",
                 @"54",
-                @"55",
-                @"56",
-                @"57",
-                @"58",
+                //                @"55",
+                //                @"56",
+                //                @"57",
+                //                @"58",
             ],
             @[
                 @"01",
@@ -227,28 +249,28 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
                 @"06",
                 @"07",
                 @"08",
-                //                @"09",
-                //                @"10",
-                //                @"11",
-                //                @"12",
-                //                @"13",
-                //                @"14",
-                //                @"15",
-                //                @"16",
-                //                @"17",
-                //                @"18",
-                //                @"19",
-                //                @"20",
-                //                @"21",
-                //                @"22",
-                //                @"23",
-                //                @"24",
-                //                @"25",
-                //                @"26",
-                //                @"27",
-                //                @"28",
-                //                @"29",
-                //                @"30",
+                @"09",
+                @"10",
+                @"11",
+                @"12",
+                @"13",
+                @"14",
+                @"15",
+                @"16",
+                @"17",
+                @"18",
+                @"19",
+                @"20",
+                @"21",
+                @"22",
+                @"23",
+                @"24",
+                @"25",
+                @"26",
+                @"27",
+                @"28",
+                @"29",
+                @"30",
             ]
         ];
     }

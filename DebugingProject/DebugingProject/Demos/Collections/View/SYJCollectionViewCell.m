@@ -26,7 +26,7 @@
 //                                            blue:arc4random() % 256 / 255.0
 //                                           alpha:1.0];
     self.layer.borderWidth = 1;
-    self.layer.borderColor = [UIColor blackColor].CGColor;
+    self.layer.borderColor = [UIColor orangeColor].CGColor;
     [self.contentView addSubview:self.label];
     [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.contentView);
