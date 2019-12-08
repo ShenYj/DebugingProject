@@ -195,19 +195,15 @@ static NSString * const kCollectionHeaderReusedID = @"kCollectionHeaderReusedID"
     }
     // 2.3. 不同section编辑, section 1 -插入-> section 0
     NSLog(@"不同组交换, 1 -> 0");
-    toSouItem   = destinArray.lastObject;
-    if (destinArray.count < 8) {
-        [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
-        [sourceArray removeObjectAtIndex:sourceIndexPath.item];
-    }
-    else {
+    [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
+    [sourceArray removeObjectAtIndex:sourceIndexPath.item];
+    if (destinArray.count >= 8) {
         // 满8 交换
-        [destinArray insertObject:toDesItem atIndex:destinationIndexPath.item];
-        [sourceArray removeObjectAtIndex:sourceIndexPath.item];
+        toSouItem = destinArray.lastObject;
         [sourceArray addObject:toSouItem];
         [destinArray removeLastObject];
     }
-    
+
     self.dataSources = @[destinArray.copy, sourceArray.copy];
     [self.collections reloadData];
 }
