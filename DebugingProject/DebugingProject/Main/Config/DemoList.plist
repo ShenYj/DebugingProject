@@ -22,7 +22,7 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>可编辑的CollectionView Demo</string>
+		<string>可编辑的CollectionView Demo(9.0)</string>
 		<key>clsName</key>
 		<string>SYJCollectionsController</string>
 	</dict>
@@ -31,6 +31,12 @@
 		<string>分享demo</string>
 		<key>clsName</key>
 		<string>SYJShareViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>仿支付宝小程序编辑页</string>
+		<key>clsName</key>
+		<string>SYJFeaturesController</string>
 	</dict>
 </array>
 </plist>
