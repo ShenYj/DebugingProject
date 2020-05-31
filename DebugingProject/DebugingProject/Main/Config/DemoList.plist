@@ -38,5 +38,11 @@
 		<key>clsName</key>
 		<string>SYJFeaturesController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>分页多控制器</string>
+		<key>clsName</key>
+		<string>SYJPageController</string>
+	</dict>
 </array>
 </plist>

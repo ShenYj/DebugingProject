@@ -27,6 +27,8 @@
 		F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */; };
 		F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472C238AC02D00A48711 /* SYJModalViewController.m */; };
 		F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */; };
+		F762D9E72425ED69006BEF74 /* SYJPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F762D9E62425ED69006BEF74 /* SYJPageController.m */; };
+		F762D9EB2425F06C006BEF74 /* SYJPageControllerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */; };
 		F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724172392869A003C00AF /* SYJBiometricViewController.m */; };
 		F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F767241A23929340003C00AF /* SYJBiometricManager.m */; };
 		F767241E2392C061003C00AF /* Biometric.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76724202392C061003C00AF /* Biometric.strings */; };
@@ -121,6 +123,10 @@
 		F728472C238AC02D00A48711 /* SYJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJModalViewController.m; sourceTree = "<group>"; };
 		F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBouncePresentAnimation.h; sourceTree = "<group>"; };
 		F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBouncePresentAnimation.m; sourceTree = "<group>"; };
+		F762D9E52425ED69006BEF74 /* SYJPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJPageController.h; sourceTree = "<group>"; };
+		F762D9E62425ED69006BEF74 /* SYJPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJPageController.m; sourceTree = "<group>"; };
+		F762D9E92425F06C006BEF74 /* SYJPageControllerDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJPageControllerDemoController.h; sourceTree = "<group>"; };
+		F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJPageControllerDemoController.m; sourceTree = "<group>"; };
 		F76724162392869A003C00AF /* SYJBiometricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricViewController.h; sourceTree = "<group>"; };
 		F76724172392869A003C00AF /* SYJBiometricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBiometricViewController.m; sourceTree = "<group>"; };
 		F767241923929340003C00AF /* SYJBiometricManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricManager.h; sourceTree = "<group>"; };
@@ -351,6 +357,7 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F762D9E42425ED48006BEF74 /* PageControllerDemo */,
 				F767247F23A54D7F003C00AF /* Features */,
 				F7672464239D1DB1003C00AF /* Shares */,
 				F76724552397F31D003C00AF /* Collections(9.0) */,
@@ -380,6 +387,25 @@
 				F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F762D9E42425ED48006BEF74 /* PageControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F762D9E82425F040006BEF74 /* PageController */,
+				F762D9E92425F06C006BEF74 /* SYJPageControllerDemoController.h */,
+				F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */,
+			);
+			path = PageControllerDemo;
+			sourceTree = "<group>";
+		};
+		F762D9E82425F040006BEF74 /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				F762D9E52425ED69006BEF74 /* SYJPageController.h */,
+				F762D9E62425ED69006BEF74 /* SYJPageController.m */,
+			);
+			path = PageController;
 			sourceTree = "<group>";
 		};
 		F76724142392865B003C00AF /* Biometric(生物识别) */ = {
@@ -589,8 +615,6 @@
 				F72846AD238975B200A48711 /* Sources */,
 				F72846AE238975B200A48711 /* Frameworks */,
 				F72846AF238975B200A48711 /* Resources */,
-				F82E0CC0F169CC2DA5365670 /* [CP] Embed Pods Frameworks */,
-				DE2EAAD6E277ECAD57051A1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -609,8 +633,6 @@
 				F72846C8238975B300A48711 /* Sources */,
 				F72846C9238975B300A48711 /* Frameworks */,
 				F72846CA238975B300A48711 /* Resources */,
-				A35EC939061326FCEF0B9D6A /* [CP] Embed Pods Frameworks */,
-				5762F5112730BAC291DD3941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -693,25 +715,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5762F5112730BAC291DD3941 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		58D7943472B2D1D9D704F019 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -732,25 +735,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A35EC939061326FCEF0B9D6A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C227D015BC13C4EEC910B217 /* [CP] Check Pods Manifest.lock */ = {
@@ -775,44 +759,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE2EAAD6E277ECAD57051A1A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F82E0CC0F169CC2DA5365670 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -830,9 +776,11 @@
 				F7672479239D1F34003C00AF /* LWShareService.m in Sources */,
 				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
 				F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */,
+				F762D9EB2425F06C006BEF74 /* SYJPageControllerDemoController.m in Sources */,
 				F7672476239D1F34003C00AF /* LWShareButton.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
+				F762D9E72425ED69006BEF74 /* SYJPageController.m in Sources */,
 				F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
 				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
@@ -1061,7 +1009,7 @@
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GCC_PREFIX_HEADER = $SRCROOT/$PRODUCT_NAME/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = DebugingProject/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1081,7 +1029,7 @@
 				DEVELOPMENT_TEAM = KS5QTFAS57;
 				GCC_PREFIX_HEADER = $SRCROOT/$PRODUCT_NAME/SupportingFiles/PrefixHeader.pch;
 				INFOPLIST_FILE = DebugingProject/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
