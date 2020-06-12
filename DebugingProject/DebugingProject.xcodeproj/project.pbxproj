@@ -66,6 +66,20 @@
 		F767248E23A60E2F003C00AF /* SYJFeatureManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F767248D23A60E2F003C00AF /* SYJFeatureManagerModel.m */; };
 		F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */; };
 		F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */; };
+		F7697B2D248BD2E90049E45F /* SYJFunctionsManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B17248BD2E90049E45F /* SYJFunctionsManagementController.m */; };
+		F7697B2E248BD2E90049E45F /* GYFuncManagementAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */; };
+		F7697B2F248BD2E90049E45F /* GYFuncManagementRemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */; };
+		F7697B30248BD2E90049E45F /* GYFuncManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */; };
+		F7697B31248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */; };
+		F7697B32248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */; };
+		F7697B33248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */; };
+		F7697B34248BD2E90049E45F /* GYFuncManagementLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */; };
+		F7697B35248BD2E90049E45F /* SYJFunctionsManagementPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B2A248BD2E90049E45F /* SYJFunctionsManagementPresenter.m */; };
+		F7697B38248BD4040049E45F /* GYCommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B37248BD4040049E45F /* GYCommonButton.m */; };
+		F7697B3B248BD60C0049E45F /* GYNormalFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */; };
+		F7697B3E248BD63C0049E45F /* GYFunctionBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */; };
+		F7697B41248BD66E0049E45F /* GYTBDFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */; };
+		F7697B44248BD6900049E45F /* GYFuncConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,11 +94,13 @@
 
 /* Begin PBXFileReference section */
 		1BF418483FDDC6A78932201D /* libPods-DebugingProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DebugingProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		511933A0B1067CC14E27EF4C /* Pods-DebugingProject.increment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProject.increment.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject.increment.xcconfig"; sourceTree = "<group>"; };
 		5CFBD0D4F8BEFECCF94399E0 /* Pods-DebugingProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		932FD0E73415B82E434C3B14 /* Pods-DebugingProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		95D6C8446F5358FAA8A2A082 /* Pods-DebugingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject.release.xcconfig"; sourceTree = "<group>"; };
 		9F4CCB95CE8B373E35308799 /* libPods-DebugingProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DebugingProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2DD48C40E2C7CF4EE51E68 /* Pods-DebugingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject.debug.xcconfig"; sourceTree = "<group>"; };
+		E61B896BAF7ADE44B7D1E945 /* Pods-DebugingProjectTests.increment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProjectTests.increment.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests.increment.xcconfig"; sourceTree = "<group>"; };
 		F72846B1238975B200A48711 /* DebugingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72846C5238975B200A48711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72846CC238975B300A48711 /* DebugingProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebugingProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +211,36 @@
 		F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerHeaderView.m; sourceTree = "<group>"; };
 		F767249823A63B46003C00AF /* SYJFeatureManagerFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerFooterView.h; sourceTree = "<group>"; };
 		F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerFooterView.m; sourceTree = "<group>"; };
+		F7697B0C248A07150049E45F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		F7697B17248BD2E90049E45F /* SYJFunctionsManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJFunctionsManagementController.m; sourceTree = "<group>"; };
+		F7697B18248BD2E90049E45F /* SYJFunctionsManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFunctionsManagementController.h; sourceTree = "<group>"; };
+		F7697B1A248BD2E90049E45F /* GYFuncManagementRemoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementRemoveCell.h; sourceTree = "<group>"; };
+		F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementAddCell.m; sourceTree = "<group>"; };
+		F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementRemoveCell.m; sourceTree = "<group>"; };
+		F7697B1D248BD2E90049E45F /* GYFuncManagementAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementAddCell.h; sourceTree = "<group>"; };
+		F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementView.m; sourceTree = "<group>"; };
+		F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementNormalSectionFooterView.m; sourceTree = "<group>"; };
+		F7697B22248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementNormalSectionHeaderView.h; sourceTree = "<group>"; };
+		F7697B23248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementLastSectionFooterView.h; sourceTree = "<group>"; };
+		F7697B24248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementNormalSectionFooterView.h; sourceTree = "<group>"; };
+		F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementNormalSectionHeaderView.m; sourceTree = "<group>"; };
+		F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementLastSectionFooterView.m; sourceTree = "<group>"; };
+		F7697B27248BD2E90049E45F /* GYFuncManagementLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementLayout.h; sourceTree = "<group>"; };
+		F7697B28248BD2E90049E45F /* GYFuncManagementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementView.h; sourceTree = "<group>"; };
+		F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementLayout.m; sourceTree = "<group>"; };
+		F7697B2A248BD2E90049E45F /* SYJFunctionsManagementPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJFunctionsManagementPresenter.m; sourceTree = "<group>"; };
+		F7697B2B248BD2E90049E45F /* SYJFunctionsManagementPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFunctionsManagementPresenter.h; sourceTree = "<group>"; };
+		F7697B2C248BD2E90049E45F /* GYFunctionsManagementProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFunctionsManagementProtocol.h; sourceTree = "<group>"; };
+		F7697B36248BD4040049E45F /* GYCommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCommonButton.h; sourceTree = "<group>"; };
+		F7697B37248BD4040049E45F /* GYCommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCommonButton.m; sourceTree = "<group>"; };
+		F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNormalFunctionCell.m; sourceTree = "<group>"; };
+		F7697B3A248BD60C0049E45F /* GYNormalFunctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNormalFunctionCell.h; sourceTree = "<group>"; };
+		F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFunctionBaseCell.m; sourceTree = "<group>"; };
+		F7697B3D248BD63C0049E45F /* GYFunctionBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFunctionBaseCell.h; sourceTree = "<group>"; };
+		F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYTBDFunctionCell.m; sourceTree = "<group>"; };
+		F7697B40248BD66E0049E45F /* GYTBDFunctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYTBDFunctionCell.h; sourceTree = "<group>"; };
+		F7697B42248BD68F0049E45F /* GYFuncConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncConfigModel.h; sourceTree = "<group>"; };
+		F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncConfigModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +279,8 @@
 				95D6C8446F5358FAA8A2A082 /* Pods-DebugingProject.release.xcconfig */,
 				5CFBD0D4F8BEFECCF94399E0 /* Pods-DebugingProjectTests.debug.xcconfig */,
 				932FD0E73415B82E434C3B14 /* Pods-DebugingProjectTests.release.xcconfig */,
+				511933A0B1067CC14E27EF4C /* Pods-DebugingProject.increment.xcconfig */,
+				E61B896BAF7ADE44B7D1E945 /* Pods-DebugingProjectTests.increment.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -240,6 +288,7 @@
 		F72846A8238975B200A48711 = {
 			isa = PBXGroup;
 			children = (
+				F7697B0C248A07150049E45F /* Config.xcconfig */,
 				F72846B3238975B200A48711 /* DebugingProject */,
 				F72846CF238975B300A48711 /* DebugingProjectTests */,
 				F72846B2238975B200A48711 /* Products */,
@@ -357,6 +406,7 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F7697B16248BD2D60049E45F /* MoreFunc */,
 				F762D9E42425ED48006BEF74 /* PageControllerDemo */,
 				F767247F23A54D7F003C00AF /* Features */,
 				F7672464239D1DB1003C00AF /* Shares */,
@@ -604,6 +654,66 @@
 			path = FeaturesManageView;
 			sourceTree = "<group>";
 		};
+		F7697B16248BD2D60049E45F /* MoreFunc */ = {
+			isa = PBXGroup;
+			children = (
+				F7697B42248BD68F0049E45F /* GYFuncConfigModel.h */,
+				F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */,
+				F7697B19248BD2E90049E45F /* Cell */,
+				F7697B1E248BD2E90049E45F /* FunctionsManagementViews */,
+				F7697B18248BD2E90049E45F /* SYJFunctionsManagementController.h */,
+				F7697B17248BD2E90049E45F /* SYJFunctionsManagementController.m */,
+				F7697B2B248BD2E90049E45F /* SYJFunctionsManagementPresenter.h */,
+				F7697B2A248BD2E90049E45F /* SYJFunctionsManagementPresenter.m */,
+				F7697B2C248BD2E90049E45F /* GYFunctionsManagementProtocol.h */,
+			);
+			path = MoreFunc;
+			sourceTree = "<group>";
+		};
+		F7697B19248BD2E90049E45F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7697B40248BD66E0049E45F /* GYTBDFunctionCell.h */,
+				F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */,
+				F7697B3D248BD63C0049E45F /* GYFunctionBaseCell.h */,
+				F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */,
+				F7697B3A248BD60C0049E45F /* GYNormalFunctionCell.h */,
+				F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */,
+				F7697B1A248BD2E90049E45F /* GYFuncManagementRemoveCell.h */,
+				F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */,
+				F7697B1D248BD2E90049E45F /* GYFuncManagementAddCell.h */,
+				F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F7697B1E248BD2E90049E45F /* FunctionsManagementViews */ = {
+			isa = PBXGroup;
+			children = (
+				F7697B20248BD2E90049E45F /* SectionHeaderAndFooter */,
+				F7697B36248BD4040049E45F /* GYCommonButton.h */,
+				F7697B37248BD4040049E45F /* GYCommonButton.m */,
+				F7697B28248BD2E90049E45F /* GYFuncManagementView.h */,
+				F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */,
+				F7697B27248BD2E90049E45F /* GYFuncManagementLayout.h */,
+				F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */,
+			);
+			path = FunctionsManagementViews;
+			sourceTree = "<group>";
+		};
+		F7697B20248BD2E90049E45F /* SectionHeaderAndFooter */ = {
+			isa = PBXGroup;
+			children = (
+				F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */,
+				F7697B22248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.h */,
+				F7697B23248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.h */,
+				F7697B24248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.h */,
+				F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */,
+				F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */,
+			);
+			path = SectionHeaderAndFooter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -772,6 +882,7 @@
 				F767248E23A60E2F003C00AF /* SYJFeatureManagerModel.m in Sources */,
 				F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */,
 				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
+				F7697B34248BD2E90049E45F /* GYFuncManagementLayout.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
 				F7672479239D1F34003C00AF /* LWShareService.m in Sources */,
 				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
@@ -784,14 +895,19 @@
 				F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
 				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
+				F7697B2D248BD2E90049E45F /* SYJFunctionsManagementController.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
+				F7697B2F248BD2E90049E45F /* GYFuncManagementRemoveCell.m in Sources */,
 				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
 				F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */,
+				F7697B3E248BD63C0049E45F /* GYFunctionBaseCell.m in Sources */,
+				F7697B2E248BD2E90049E45F /* GYFuncManagementAddCell.m in Sources */,
 				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
 				F767243B23938970003C00AF /* SYJGestureConst.m in Sources */,
 				F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */,
 				F767248323A54DA2003C00AF /* SYJFeaturesController.m in Sources */,
 				F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */,
+				F7697B30248BD2E90049E45F /* GYFuncManagementView.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
@@ -799,15 +915,23 @@
 				F72846E52389766D00A48711 /* main.m in Sources */,
 				F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
+				F7697B35248BD2E90049E45F /* SYJFunctionsManagementPresenter.m in Sources */,
 				F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */,
+				F7697B44248BD6900049E45F /* GYFuncConfigModel.m in Sources */,
+				F7697B38248BD4040049E45F /* GYCommonButton.m in Sources */,
 				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
+				F7697B33248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m in Sources */,
+				F7697B31248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m in Sources */,
+				F7697B3B248BD60C0049E45F /* GYNormalFunctionCell.m in Sources */,
 				F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */,
 				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
 				F767248B23A60DB5003C00AF /* SYJFeatureManagerCell.m in Sources */,
 				F76724482393C186003C00AF /* CALayer+Shake.m in Sources */,
 				F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */,
 				F767242923937CB5003C00AF /* SYJGestureUnlockView.m in Sources */,
+				F7697B41248BD66E0049E45F /* GYTBDFunctionCell.m in Sources */,
 				F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */,
+				F7697B32248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1082,6 +1206,107 @@
 			};
 			name = Release;
 		};
+		F7697B0D248A075B0049E45F /* Increment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7697B0C248A07150049E45F /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Increment;
+		};
+		F7697B0E248A075B0049E45F /* Increment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 511933A0B1067CC14E27EF4C /* Pods-DebugingProject.increment.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5QTFAS57;
+				GCC_PREFIX_HEADER = $SRCROOT/$PRODUCT_NAME/SupportingFiles/PrefixHeader.pch;
+				INFOPLIST_FILE = DebugingProject/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Increment;
+		};
+		F7697B0F248A075B0049E45F /* Increment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61B896BAF7ADE44B7D1E945 /* Pods-DebugingProjectTests.increment.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KS5QTFAS57;
+				INFOPLIST_FILE = DebugingProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DebugingProject.app/DebugingProject";
+			};
+			name = Increment;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1089,6 +1314,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72846D3238975B300A48711 /* Debug */,
+				F7697B0D248A075B0049E45F /* Increment */,
 				F72846D4238975B300A48711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1098,6 +1324,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72846D6238975B300A48711 /* Debug */,
+				F7697B0E248A075B0049E45F /* Increment */,
 				F72846D7238975B300A48711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1107,6 +1334,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F72846D9238975B300A48711 /* Debug */,
+				F7697B0F248A075B0049E45F /* Increment */,
 				F72846DA238975B300A48711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -36,7 +36,7 @@
 		<key>title</key>
 		<string>仿支付宝小程序编辑页</string>
 		<key>clsName</key>
-		<string>SYJFeaturesController</string>
+		<string>SYJFunctionsManagementController</string>
 	</dict>
 	<dict>
 		<key>title</key>
