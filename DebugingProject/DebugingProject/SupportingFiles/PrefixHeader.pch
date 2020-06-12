@@ -67,8 +67,8 @@
 
 
 
-
-
+#define COMMON_SCHEME_WHITE_COLOR ([UIColor color:246 green:247 blue:248 alpha:1.0])
+#define COMMON_SCHEME_GRAY_COLOR ([UIColor color:136 green:136 blue:136 alpha:1.0])
 
 #define IS_IPHONE_PLUS_BIGMODE ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) : NO)
 
