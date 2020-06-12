@@ -1,24 +1,30 @@
 PODS:
   - JVFloatLabeledTextField (1.2.2)
   - Masonry (1.1.0)
+  - SDWebImage (5.7.3):
+    - SDWebImage/Core (= 5.7.3)
+  - SDWebImage/Core (5.7.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - JVFloatLabeledTextField (~> 1.2.2)
   - Masonry (~> 1.1.0)
+  - SDWebImage (~> 5.7.3)
   - YYModel (~> 1.0.4)
 
 SPEC REPOS:
   trunk:
     - JVFloatLabeledTextField
     - Masonry
+    - SDWebImage
     - YYModel
 
 SPEC CHECKSUMS:
   JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 97351f6582ceca541ea294ba66a1fcb342a331c2
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: d019fb265d15831989ac25c194642a883b3b7ae0
+PODFILE CHECKSUM: ffbd4da81af1d0beaf39b8f02afad4fa189fe1ab
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
