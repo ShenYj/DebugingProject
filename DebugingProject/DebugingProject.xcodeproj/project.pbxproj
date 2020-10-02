@@ -67,19 +67,7 @@
 		F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */; };
 		F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */; };
 		F7697B2D248BD2E90049E45F /* SYJFunctionsManagementController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B17248BD2E90049E45F /* SYJFunctionsManagementController.m */; };
-		F7697B2E248BD2E90049E45F /* GYFuncManagementAddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */; };
-		F7697B2F248BD2E90049E45F /* GYFuncManagementRemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */; };
-		F7697B30248BD2E90049E45F /* GYFuncManagementView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */; };
-		F7697B31248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */; };
-		F7697B32248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */; };
-		F7697B33248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */; };
-		F7697B34248BD2E90049E45F /* GYFuncManagementLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */; };
 		F7697B35248BD2E90049E45F /* SYJFunctionsManagementPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B2A248BD2E90049E45F /* SYJFunctionsManagementPresenter.m */; };
-		F7697B38248BD4040049E45F /* GYCommonButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B37248BD4040049E45F /* GYCommonButton.m */; };
-		F7697B3B248BD60C0049E45F /* GYNormalFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */; };
-		F7697B3E248BD63C0049E45F /* GYFunctionBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */; };
-		F7697B41248BD66E0049E45F /* GYTBDFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */; };
-		F7697B44248BD6900049E45F /* GYFuncConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,33 +202,9 @@
 		F7697B0C248A07150049E45F /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F7697B17248BD2E90049E45F /* SYJFunctionsManagementController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJFunctionsManagementController.m; sourceTree = "<group>"; };
 		F7697B18248BD2E90049E45F /* SYJFunctionsManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFunctionsManagementController.h; sourceTree = "<group>"; };
-		F7697B1A248BD2E90049E45F /* GYFuncManagementRemoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementRemoveCell.h; sourceTree = "<group>"; };
-		F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementAddCell.m; sourceTree = "<group>"; };
-		F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementRemoveCell.m; sourceTree = "<group>"; };
-		F7697B1D248BD2E90049E45F /* GYFuncManagementAddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementAddCell.h; sourceTree = "<group>"; };
-		F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementView.m; sourceTree = "<group>"; };
-		F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementNormalSectionFooterView.m; sourceTree = "<group>"; };
-		F7697B22248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementNormalSectionHeaderView.h; sourceTree = "<group>"; };
-		F7697B23248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementLastSectionFooterView.h; sourceTree = "<group>"; };
-		F7697B24248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementNormalSectionFooterView.h; sourceTree = "<group>"; };
-		F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementNormalSectionHeaderView.m; sourceTree = "<group>"; };
-		F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementLastSectionFooterView.m; sourceTree = "<group>"; };
-		F7697B27248BD2E90049E45F /* GYFuncManagementLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementLayout.h; sourceTree = "<group>"; };
-		F7697B28248BD2E90049E45F /* GYFuncManagementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncManagementView.h; sourceTree = "<group>"; };
-		F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncManagementLayout.m; sourceTree = "<group>"; };
 		F7697B2A248BD2E90049E45F /* SYJFunctionsManagementPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYJFunctionsManagementPresenter.m; sourceTree = "<group>"; };
 		F7697B2B248BD2E90049E45F /* SYJFunctionsManagementPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYJFunctionsManagementPresenter.h; sourceTree = "<group>"; };
 		F7697B2C248BD2E90049E45F /* GYFunctionsManagementProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFunctionsManagementProtocol.h; sourceTree = "<group>"; };
-		F7697B36248BD4040049E45F /* GYCommonButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYCommonButton.h; sourceTree = "<group>"; };
-		F7697B37248BD4040049E45F /* GYCommonButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYCommonButton.m; sourceTree = "<group>"; };
-		F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYNormalFunctionCell.m; sourceTree = "<group>"; };
-		F7697B3A248BD60C0049E45F /* GYNormalFunctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYNormalFunctionCell.h; sourceTree = "<group>"; };
-		F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFunctionBaseCell.m; sourceTree = "<group>"; };
-		F7697B3D248BD63C0049E45F /* GYFunctionBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFunctionBaseCell.h; sourceTree = "<group>"; };
-		F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYTBDFunctionCell.m; sourceTree = "<group>"; };
-		F7697B40248BD66E0049E45F /* GYTBDFunctionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYTBDFunctionCell.h; sourceTree = "<group>"; };
-		F7697B42248BD68F0049E45F /* GYFuncConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYFuncConfigModel.h; sourceTree = "<group>"; };
-		F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYFuncConfigModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -657,8 +621,6 @@
 		F7697B16248BD2D60049E45F /* MoreFunc */ = {
 			isa = PBXGroup;
 			children = (
-				F7697B42248BD68F0049E45F /* GYFuncConfigModel.h */,
-				F7697B43248BD68F0049E45F /* GYFuncConfigModel.m */,
 				F7697B19248BD2E90049E45F /* Cell */,
 				F7697B1E248BD2E90049E45F /* FunctionsManagementViews */,
 				F7697B18248BD2E90049E45F /* SYJFunctionsManagementController.h */,
@@ -673,16 +635,6 @@
 		F7697B19248BD2E90049E45F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				F7697B40248BD66E0049E45F /* GYTBDFunctionCell.h */,
-				F7697B3F248BD66E0049E45F /* GYTBDFunctionCell.m */,
-				F7697B3D248BD63C0049E45F /* GYFunctionBaseCell.h */,
-				F7697B3C248BD63C0049E45F /* GYFunctionBaseCell.m */,
-				F7697B3A248BD60C0049E45F /* GYNormalFunctionCell.h */,
-				F7697B39248BD60C0049E45F /* GYNormalFunctionCell.m */,
-				F7697B1A248BD2E90049E45F /* GYFuncManagementRemoveCell.h */,
-				F7697B1C248BD2E90049E45F /* GYFuncManagementRemoveCell.m */,
-				F7697B1D248BD2E90049E45F /* GYFuncManagementAddCell.h */,
-				F7697B1B248BD2E90049E45F /* GYFuncManagementAddCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -691,12 +643,6 @@
 			isa = PBXGroup;
 			children = (
 				F7697B20248BD2E90049E45F /* SectionHeaderAndFooter */,
-				F7697B36248BD4040049E45F /* GYCommonButton.h */,
-				F7697B37248BD4040049E45F /* GYCommonButton.m */,
-				F7697B28248BD2E90049E45F /* GYFuncManagementView.h */,
-				F7697B1F248BD2E90049E45F /* GYFuncManagementView.m */,
-				F7697B27248BD2E90049E45F /* GYFuncManagementLayout.h */,
-				F7697B29248BD2E90049E45F /* GYFuncManagementLayout.m */,
 			);
 			path = FunctionsManagementViews;
 			sourceTree = "<group>";
@@ -704,12 +650,6 @@
 		F7697B20248BD2E90049E45F /* SectionHeaderAndFooter */ = {
 			isa = PBXGroup;
 			children = (
-				F7697B21248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m */,
-				F7697B22248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.h */,
-				F7697B23248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.h */,
-				F7697B24248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.h */,
-				F7697B25248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m */,
-				F7697B26248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m */,
 			);
 			path = SectionHeaderAndFooter;
 			sourceTree = "<group>";
@@ -882,7 +822,6 @@
 				F767248E23A60E2F003C00AF /* SYJFeatureManagerModel.m in Sources */,
 				F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */,
 				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
-				F7697B34248BD2E90049E45F /* GYFuncManagementLayout.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
 				F7672479239D1F34003C00AF /* LWShareService.m in Sources */,
 				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
@@ -897,17 +836,13 @@
 				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
 				F7697B2D248BD2E90049E45F /* SYJFunctionsManagementController.m in Sources */,
 				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
-				F7697B2F248BD2E90049E45F /* GYFuncManagementRemoveCell.m in Sources */,
 				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
 				F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */,
-				F7697B3E248BD63C0049E45F /* GYFunctionBaseCell.m in Sources */,
-				F7697B2E248BD2E90049E45F /* GYFuncManagementAddCell.m in Sources */,
 				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
 				F767243B23938970003C00AF /* SYJGestureConst.m in Sources */,
 				F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */,
 				F767248323A54DA2003C00AF /* SYJFeaturesController.m in Sources */,
 				F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */,
-				F7697B30248BD2E90049E45F /* GYFuncManagementView.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
@@ -917,21 +852,14 @@
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
 				F7697B35248BD2E90049E45F /* SYJFunctionsManagementPresenter.m in Sources */,
 				F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */,
-				F7697B44248BD6900049E45F /* GYFuncConfigModel.m in Sources */,
-				F7697B38248BD4040049E45F /* GYCommonButton.m in Sources */,
 				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
-				F7697B33248BD2E90049E45F /* GYFuncManagementLastSectionFooterView.m in Sources */,
-				F7697B31248BD2E90049E45F /* GYFuncManagementNormalSectionFooterView.m in Sources */,
-				F7697B3B248BD60C0049E45F /* GYNormalFunctionCell.m in Sources */,
 				F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */,
 				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
 				F767248B23A60DB5003C00AF /* SYJFeatureManagerCell.m in Sources */,
 				F76724482393C186003C00AF /* CALayer+Shake.m in Sources */,
 				F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */,
 				F767242923937CB5003C00AF /* SYJGestureUnlockView.m in Sources */,
-				F7697B41248BD66E0049E45F /* GYTBDFunctionCell.m in Sources */,
 				F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */,
-				F7697B32248BD2E90049E45F /* GYFuncManagementNormalSectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

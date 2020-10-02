@@ -9,21 +9,21 @@
 #import "SYJFunctionsManagementController.h"
 #import "SYJFunctionsManagementPresenter.h"
 #import "GYFunctionsManagementProtocol.h"
-#import "GYFuncManagementView.h"
-#import "GYCommonButton.h"
-//#import "GYFunctionManager.h"
-//#import "GYFuncConfigModel.h"
 
-@interface SYJFunctionsManagementController () <GYFunctionsManagementProtocol, GYFuncManagementViewDelegate>
+#define COMMON_SCHEME_RED_COLOR [UIColor redColor]
+
+
+// GYFuncManagementViewDelegate
+@interface SYJFunctionsManagementController () <GYFunctionsManagementProtocol>
 
 @property (nonatomic, strong) SYJFunctionsManagementPresenter *fmPresenter;
 
 #pragma mark - UI
 @property (nonatomic, strong) UIButton               *leftBackNavBtn;
 @property (nonatomic, strong) UIButton               *leftCancelNavBtn;
-@property (nonatomic, strong) GYCommonButton         *rightNavBtn;
-
-@property (nonatomic, strong) GYFuncManagementView   *funcManagementView;
+//@property (nonatomic, strong) GYCommonButton         *rightNavBtn;
+//
+//@property (nonatomic, strong) GYFuncManagementView   *funcManagementView;
 
 #pragma mark -
 
@@ -39,7 +39,7 @@
 @property (nonatomic, strong) GYFuncConfigModel *disPlayFuncConfigModel;
 
 // 已选功能集合
-@property (nonatomic, strong) NSMutableArray <GYFunctionModel *>      *selectedFuncModelArray;
+//@property (nonatomic, strong) NSMutableArray <GYFunctionModel *>      *selectedFuncModelArray;
 
 @end
 
@@ -81,10 +81,10 @@
     }
     self.navigationItem.leftBarButtonItem = leftItem;
     // 导航右侧按钮: 编辑/完成 按钮
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView: self.rightNavBtn];
-    self.navigationItem.rightBarButtonItem = rightItem;
+//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView: self.rightNavBtn];
+//    self.navigationItem.rightBarButtonItem = rightItem;
     // 页面
-    [self.view addSubview:self.funcManagementView];
+//    [self.view addSubview:self.funcManagementView];
 }
 
 #pragma mark - GYFunctionsManagementProtocol
@@ -116,15 +116,15 @@
 {
     self.editState = NO;
     
-    [self.rightNavBtn setBackgroundColor:WHITE_COLOR];
-    [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
-    [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
+//    [self.rightNavBtn setBackgroundColor:[UIColor whiteColor]];
+//    [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
+//    [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
 
     // 非编辑状态下返回
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView: self.leftBackNavBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    [self.funcManagementView cancelEdit];
+//    [self.funcManagementView cancelEdit];
 }
 
 /// 右侧导航按钮业务: 完成编辑
@@ -133,15 +133,15 @@
 //    [GYPureProgressHUD show];
     self.editState = NO;
     
-    [self.rightNavBtn setBackgroundColor:WHITE_COLOR];
-    [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
-    [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
+//    [self.rightNavBtn setBackgroundColor:[UIColor whiteColor]];
+//    [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
+//    [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
     
     // 非编辑状态下返回
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView: self.leftBackNavBtn];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    [self.funcManagementView saveEdit];
+//    [self.funcManagementView saveEdit];
 //    [GYPureProgressHUD dismiss];
 }
 /// 右侧导航按钮业务: 进入编辑状态
@@ -149,9 +149,9 @@
 {
     self.editState = YES;
     
-    [self.rightNavBtn setBackgroundColor:COMMON_SCHEME_RED_COLOR];
-    [_rightNavBtn setTitle:@"完成" forState:UIControlStateNormal];
-    [_rightNavBtn setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
+//    [self.rightNavBtn setBackgroundColor:COMMON_SCHEME_RED_COLOR];
+//    [_rightNavBtn setTitle:@"完成" forState:UIControlStateNormal];
+//    [_rightNavBtn setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
     
     // 编辑状态下返回按钮变为取消功能
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithCustomView: self.leftCancelNavBtn];
@@ -169,19 +169,18 @@
 - (void)funcConfigChanged:(BOOL)changed
 {
     self.funcChanged = changed;
-    GYDebugLog(@"是否变更快捷功能列表: %d", changed);
 }
 /// 非编辑状态下长按至编辑状态
 - (void)funcUneditStateLongPressHandler
 {
     [self.fmPresenter personClickRightNavButton:self.isEditState];
-    self.funcManagementView.editState = self.isEditState;
+//    self.funcManagementView.editState = self.isEditState;
 }
 /// 执行某个功能
-- (void)funcExecuteFunction:(nullable GYFunctionModel *)function
-{
-    [[GYFunctionManager shareManager] toolExecutiveFunction:function];
-}
+//- (void)funcExecuteFunction:(nullable GYFunctionModel *)function
+//{
+//    [[GYFunctionManager shareManager] toolExecutiveFunction:function];
+//}
 
 #pragma mark - target
 
@@ -193,15 +192,15 @@
 - (void)targetForRightNavigtionButton:(UIButton *)sender
 {
     [self.fmPresenter personClickRightNavButton:self.isEditState];
-    self.funcManagementView.editState = self.isEditState;
+//    self.funcManagementView.editState = self.isEditState;
 }
 
 #pragma mark - lazy
 - (UIButton *)leftBackNavBtn {
     if (!_leftBackNavBtn) {
-        _leftBackNavBtn = [[UIButton alloc] init];
+        _leftBackNavBtn                 = [[UIButton alloc] init];
         _leftBackNavBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_leftBackNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
+        [_leftBackNavBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_leftBackNavBtn setImage:[[UIImage imageNamed:@"nav_arrow_back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateNormal];
         [_leftBackNavBtn setImage:[[UIImage imageNamed:@"nav_arrow_back_click"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] forState:UIControlStateHighlighted];
         [_leftBackNavBtn addTarget:self action:@selector(targetForLeftNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -211,40 +210,40 @@
 }
 - (UIButton *)leftCancelNavBtn {
     if (!_leftCancelNavBtn) {
-        _leftCancelNavBtn = [[UIButton alloc] init];
-        _leftCancelNavBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        _leftCancelNavBtn                   = [[UIButton alloc] init];
+        _leftCancelNavBtn.titleLabel.font   = [UIFont systemFontOfSize:15];
         [_leftCancelNavBtn setTitle:@"取消" forState:UIControlStateNormal];
-        [_leftCancelNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
+        [_leftCancelNavBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_leftCancelNavBtn addTarget:self action:@selector(targetForLeftNavigationButton:) forControlEvents:UIControlEventTouchUpInside];
         [_leftCancelNavBtn sizeToFit];
     }
     return _leftCancelNavBtn;
 }
-- (GYCommonButton *)rightNavBtn {
-    if (!_rightNavBtn) {
-        CGRect frame = CGRectMake(0, 0, 50, 30);
-        _rightNavBtn = [[GYCommonButton alloc] initWithBGColor: COMMON_SCHEME_RED_COLOR frame:frame];
-        _rightNavBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-        if (self.isEditState) {
-            [_rightNavBtn setBackgroundColor:COMMON_SCHEME_RED_COLOR];
-            [_rightNavBtn setTitle:@"完成" forState:UIControlStateNormal];
-            [_rightNavBtn setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
-        } else {
-            [_rightNavBtn setBackgroundColor:WHITE_COLOR];
-            [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
-            [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
-        }
-        [_rightNavBtn addTarget:self action:@selector(targetForRightNavigtionButton:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _rightNavBtn;
-}
-- (GYFuncManagementView *)funcManagementView {
-    if (!_funcManagementView) {
-        CGRect rect = CGRectMake(0, NAVIGATION_STATUS_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_STATUS_HEIGHT);
-        _funcManagementView = [[GYFuncManagementView alloc] initWithFrame:rect funcConfigModel:self.originalFuncConfigModel editState:self.isEditState];
-        _funcManagementView.fmDelegate = self;
-    }
-    return _funcManagementView;
-}
+//- (GYCommonButton *)rightNavBtn {
+//    if (!_rightNavBtn) {
+//        CGRect frame = CGRectMake(0, 0, 50, 30);
+//        _rightNavBtn = [[GYCommonButton alloc] initWithBGColor: COMMON_SCHEME_RED_COLOR frame:frame];
+//        _rightNavBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+//        if (self.isEditState) {
+//            [_rightNavBtn setBackgroundColor:COMMON_SCHEME_RED_COLOR];
+//            [_rightNavBtn setTitle:@"完成" forState:UIControlStateNormal];
+//            [_rightNavBtn setTitleColor:WHITE_COLOR forState:UIControlStateNormal];
+//        } else {
+//            [_rightNavBtn setBackgroundColor:WHITE_COLOR];
+//            [_rightNavBtn setTitle:@"编辑" forState:UIControlStateNormal];
+//            [_rightNavBtn setTitleColor:BLACK_COLOR forState:UIControlStateNormal];
+//        }
+//        [_rightNavBtn addTarget:self action:@selector(targetForRightNavigtionButton:) forControlEvents:UIControlEventTouchUpInside];
+//    }
+//    return _rightNavBtn;
+//}
+//- (GYFuncManagementView *)funcManagementView {
+//    if (!_funcManagementView) {
+//        CGRect rect = CGRectMake(0, NAVIGATION_STATUS_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT - NAVIGATION_STATUS_HEIGHT);
+//        _funcManagementView = [[GYFuncManagementView alloc] initWithFrame:rect funcConfigModel:self.originalFuncConfigModel editState:self.isEditState];
+//        _funcManagementView.fmDelegate = self;
+//    }
+//    return _funcManagementView;
+//}
 
 @end
