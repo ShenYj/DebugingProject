@@ -32,14 +32,14 @@
         [self.window makeKeyAndVisible];
     }
     // 初始化3D Touch 标签
-    [[SYJShortcutItemManager sharedManager] initializeShortcutItems];
+    return [[SYJShortcutItemManager sharedManager] application:application forceTouchDidFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
 
 // 3D Touch 标签跳转
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
-{
+API_AVAILABLE(ios(9.0)){
     [[SYJShortcutItemManager sharedManager] application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
 }
 

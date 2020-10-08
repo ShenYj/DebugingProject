@@ -25,6 +25,47 @@
 		F7284720238A53EF00A48711 /* DemoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F728471F238A53EF00A48711 /* DemoList.plist */; };
 		F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284723238A566B00A48711 /* SYJBaseModel.m */; };
 		F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */; };
+		F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472C238AC02D00A48711 /* SYJModalViewController.m */; };
+		F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */; };
+		F762D9E72425ED69006BEF74 /* SYJPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F762D9E62425ED69006BEF74 /* SYJPageController.m */; };
+		F762D9EB2425F06C006BEF74 /* SYJPageControllerDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */; };
+		F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724172392869A003C00AF /* SYJBiometricViewController.m */; };
+		F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F767241A23929340003C00AF /* SYJBiometricManager.m */; };
+		F767241E2392C061003C00AF /* Biometric.strings in Resources */ = {isa = PBXBuildFile; fileRef = F76724202392C061003C00AF /* Biometric.strings */; };
+		F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767242523937A4F003C00AF /* SYJGestureViewController.m */; };
+		F767242923937CB5003C00AF /* SYJGestureUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767242823937CB4003C00AF /* SYJGestureUnlockView.m */; };
+		F767242D239380BE003C00AF /* gesture_node_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = F767242B239380BE003C00AF /* gesture_node_highlighted.png */; };
+		F767242E239380BE003C00AF /* gesture_node_highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F767242C239380BE003C00AF /* gesture_node_highlighted@2x.png */; };
+		F7672431239380C8003C00AF /* gesture_node_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F767242F239380C8003C00AF /* gesture_node_normal.png */; };
+		F7672432239380C8003C00AF /* gesture_node_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7672430239380C8003C00AF /* gesture_node_normal@2x.png */; };
+		F7672434239380D0003C00AF /* Home_refresh_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F7672433239380D0003C00AF /* Home_refresh_bg.png */; };
+		F767243B23938970003C00AF /* SYJGestureConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243A23938970003C00AF /* SYJGestureConst.m */; };
+		F76724412393BE8E003C00AF /* SYJGestureVerifyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724402393BE8E003C00AF /* SYJGestureVerifyLabel.m */; };
+		F76724442393C098003C00AF /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724432393C098003C00AF /* UIColor+Extension.m */; };
+		F76724482393C186003C00AF /* CALayer+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724472393C186003C00AF /* CALayer+Shake.m */; };
+		F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = F767244A2393CC8A003C00AF /* SYJGesturePreview.m */; };
+		F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767244E2393E338003C00AF /* SYJBasicUnlockController.m */; };
+		F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */; };
+		F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243723938963003C00AF /* SYJGestureView.m */; };
+		F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767243D23938B76003C00AF /* SYJGestureItemView.m */; };
+		F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F76724582397F362003C00AF /* SYJCollectionsController.m */; };
+		F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */; };
+		F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */; };
+		F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */; };
+		F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672468239D1DDB003C00AF /* SYJShareViewController.m */; };
+		F7672476239D1F34003C00AF /* LWShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F767246F239D1F34003C00AF /* LWShareButton.m */; };
+		F7672477239D1F34003C00AF /* Share.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7672470239D1F34003C00AF /* Share.xcassets */; };
+		F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672471239D1F34003C00AF /* LWShareSheetView.m */; };
+		F7672479239D1F34003C00AF /* LWShareService.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672472239D1F34003C00AF /* LWShareService.m */; };
+		F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672473239D1F34003C00AF /* LWShareContentView.m */; };
+		F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */; };
+		F767247E239D2876003C00AF /* UIColor+LW.m in Sources */ = {isa = PBXBuildFile; fileRef = F767247C239D2876003C00AF /* UIColor+LW.m */; };
+		F767248323A54DA2003C00AF /* SYJFeaturesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F767248223A54DA2003C00AF /* SYJFeaturesController.m */; };
+		F767248823A60BE1003C00AF /* SYJFeatureManagerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F767248623A60B72003C00AF /* SYJFeatureManagerLayout.m */; };
+		F767248B23A60DB5003C00AF /* SYJFeatureManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F767248A23A60DB5003C00AF /* SYJFeatureManagerCell.m */; };
+		F767248E23A60E2F003C00AF /* SYJFeatureManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F767248D23A60E2F003C00AF /* SYJFeatureManagerModel.m */; };
+		F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */; };
+		F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +119,82 @@
 		F7284723238A566B00A48711 /* SYJBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBaseModel.m; sourceTree = "<group>"; };
 		F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJTransitioningViewController.h; sourceTree = "<group>"; };
 		F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJTransitioningViewController.m; sourceTree = "<group>"; };
+		F728472B238AC02D00A48711 /* SYJModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJModalViewController.h; sourceTree = "<group>"; };
+		F728472C238AC02D00A48711 /* SYJModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJModalViewController.m; sourceTree = "<group>"; };
+		F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBouncePresentAnimation.h; sourceTree = "<group>"; };
+		F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBouncePresentAnimation.m; sourceTree = "<group>"; };
+		F762D9E52425ED69006BEF74 /* SYJPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJPageController.h; sourceTree = "<group>"; };
+		F762D9E62425ED69006BEF74 /* SYJPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJPageController.m; sourceTree = "<group>"; };
+		F762D9E92425F06C006BEF74 /* SYJPageControllerDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJPageControllerDemoController.h; sourceTree = "<group>"; };
+		F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJPageControllerDemoController.m; sourceTree = "<group>"; };
+		F76724162392869A003C00AF /* SYJBiometricViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricViewController.h; sourceTree = "<group>"; };
+		F76724172392869A003C00AF /* SYJBiometricViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBiometricViewController.m; sourceTree = "<group>"; };
+		F767241923929340003C00AF /* SYJBiometricManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBiometricManager.h; sourceTree = "<group>"; };
+		F767241A23929340003C00AF /* SYJBiometricManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBiometricManager.m; sourceTree = "<group>"; };
+		F767241F2392C061003C00AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Biometric.strings; sourceTree = "<group>"; };
+		F76724212392C064003C00AF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Biometric.strings"; sourceTree = "<group>"; };
+		F767242423937A4F003C00AF /* SYJGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureViewController.h; sourceTree = "<group>"; };
+		F767242523937A4F003C00AF /* SYJGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureViewController.m; sourceTree = "<group>"; };
+		F767242723937CB4003C00AF /* SYJGestureUnlockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureUnlockView.h; sourceTree = "<group>"; };
+		F767242823937CB4003C00AF /* SYJGestureUnlockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureUnlockView.m; sourceTree = "<group>"; };
+		F767242B239380BE003C00AF /* gesture_node_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_highlighted.png; sourceTree = "<group>"; };
+		F767242C239380BE003C00AF /* gesture_node_highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_highlighted@2x.png"; sourceTree = "<group>"; };
+		F767242F239380C8003C00AF /* gesture_node_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_normal.png; sourceTree = "<group>"; };
+		F7672430239380C8003C00AF /* gesture_node_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_normal@2x.png"; sourceTree = "<group>"; };
+		F7672433239380D0003C00AF /* Home_refresh_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home_refresh_bg.png; sourceTree = "<group>"; };
+		F767243623938963003C00AF /* SYJGestureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureView.h; sourceTree = "<group>"; };
+		F767243723938963003C00AF /* SYJGestureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureView.m; sourceTree = "<group>"; };
+		F767243923938970003C00AF /* SYJGestureConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureConst.h; sourceTree = "<group>"; };
+		F767243A23938970003C00AF /* SYJGestureConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureConst.m; sourceTree = "<group>"; };
+		F767243C23938B76003C00AF /* SYJGestureItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureItemView.h; sourceTree = "<group>"; };
+		F767243D23938B76003C00AF /* SYJGestureItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureItemView.m; sourceTree = "<group>"; };
+		F767243F2393BE8E003C00AF /* SYJGestureVerifyLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGestureVerifyLabel.h; sourceTree = "<group>"; };
+		F76724402393BE8E003C00AF /* SYJGestureVerifyLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGestureVerifyLabel.m; sourceTree = "<group>"; };
+		F76724422393C098003C00AF /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F76724432393C098003C00AF /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		F76724462393C186003C00AF /* CALayer+Shake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Shake.h"; sourceTree = "<group>"; };
+		F76724472393C186003C00AF /* CALayer+Shake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Shake.m"; sourceTree = "<group>"; };
+		F76724492393CC8A003C00AF /* SYJGesturePreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJGesturePreview.h; sourceTree = "<group>"; };
+		F767244A2393CC8A003C00AF /* SYJGesturePreview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJGesturePreview.m; sourceTree = "<group>"; };
+		F767244D2393E338003C00AF /* SYJBasicUnlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJBasicUnlockController.h; sourceTree = "<group>"; };
+		F767244E2393E338003C00AF /* SYJBasicUnlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJBasicUnlockController.m; sourceTree = "<group>"; };
+		F76724502393E441003C00AF /* SYJEnhanceUnlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJEnhanceUnlockController.h; sourceTree = "<group>"; };
+		F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJEnhanceUnlockController.m; sourceTree = "<group>"; };
+		F76724572397F362003C00AF /* SYJCollectionsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionsController.h; sourceTree = "<group>"; };
+		F76724582397F362003C00AF /* SYJCollectionsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionsController.m; sourceTree = "<group>"; };
+		F767245B2397F4E1003C00AF /* SYJCollectionsLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionsLayout.h; sourceTree = "<group>"; };
+		F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionsLayout.m; sourceTree = "<group>"; };
+		F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionHeaderView.h; sourceTree = "<group>"; };
+		F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionHeaderView.m; sourceTree = "<group>"; };
+		F7672461239BDADC003C00AF /* SYJCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJCollectionViewCell.h; sourceTree = "<group>"; };
+		F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJCollectionViewCell.m; sourceTree = "<group>"; };
+		F7672467239D1DDB003C00AF /* SYJShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJShareViewController.h; sourceTree = "<group>"; };
+		F7672468239D1DDB003C00AF /* SYJShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJShareViewController.m; sourceTree = "<group>"; };
+		F767246B239D1F34003C00AF /* LWShareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareCollectionViewCell.h; sourceTree = "<group>"; };
+		F767246C239D1F34003C00AF /* LWShareContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareContentView.h; sourceTree = "<group>"; };
+		F767246D239D1F34003C00AF /* LWShareService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareService.h; sourceTree = "<group>"; };
+		F767246E239D1F34003C00AF /* LWShareSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareSheetView.h; sourceTree = "<group>"; };
+		F767246F239D1F34003C00AF /* LWShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareButton.m; sourceTree = "<group>"; };
+		F7672470239D1F34003C00AF /* Share.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Share.xcassets; sourceTree = "<group>"; };
+		F7672471239D1F34003C00AF /* LWShareSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareSheetView.m; sourceTree = "<group>"; };
+		F7672472239D1F34003C00AF /* LWShareService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareService.m; sourceTree = "<group>"; };
+		F7672473239D1F34003C00AF /* LWShareContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareContentView.m; sourceTree = "<group>"; };
+		F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWShareCollectionViewCell.m; sourceTree = "<group>"; };
+		F7672475239D1F34003C00AF /* LWShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWShareButton.h; sourceTree = "<group>"; };
+		F767247C239D2876003C00AF /* UIColor+LW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LW.m"; sourceTree = "<group>"; };
+		F767247D239D2876003C00AF /* UIColor+LW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LW.h"; sourceTree = "<group>"; };
+		F767248123A54DA2003C00AF /* SYJFeaturesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeaturesController.h; sourceTree = "<group>"; };
+		F767248223A54DA2003C00AF /* SYJFeaturesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeaturesController.m; sourceTree = "<group>"; };
+		F767248523A60B72003C00AF /* SYJFeatureManagerLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerLayout.h; sourceTree = "<group>"; };
+		F767248623A60B72003C00AF /* SYJFeatureManagerLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerLayout.m; sourceTree = "<group>"; };
+		F767248923A60DB5003C00AF /* SYJFeatureManagerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerCell.h; sourceTree = "<group>"; };
+		F767248A23A60DB5003C00AF /* SYJFeatureManagerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerCell.m; sourceTree = "<group>"; };
+		F767248C23A60E2F003C00AF /* SYJFeatureManagerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerModel.h; sourceTree = "<group>"; };
+		F767248D23A60E2F003C00AF /* SYJFeatureManagerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerModel.m; sourceTree = "<group>"; };
+		F767249523A63B2F003C00AF /* SYJFeatureManagerHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerHeaderView.h; sourceTree = "<group>"; };
+		F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerHeaderView.m; sourceTree = "<group>"; };
+		F767249823A63B46003C00AF /* SYJFeatureManagerFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFeatureManagerFooterView.h; sourceTree = "<group>"; };
+		F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFeatureManagerFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +260,7 @@
 		F72846B3238975B200A48711 /* DebugingProject */ = {
 			isa = PBXGroup;
 			children = (
+				F76724452393C0C4003C00AF /* Extension */,
 				F7284725238AB78E00A48711 /* Demos */,
 				F728471723898CDC00A48711 /* Localized */,
 				F72846EE23897BD700A48711 /* Main */,
@@ -214,6 +332,7 @@
 				F72846FF23897FA600A48711 /* InfoPlist.strings */,
 				F72847152389838C00A48711 /* Localizable.strings */,
 				F728471C23898ED000A48711 /* ShortcutItem.strings */,
+				F76724202392C061003C00AF /* Biometric.strings */,
 			);
 			path = Localized;
 			sourceTree = "<group>";
@@ -238,17 +357,23 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				F7284726238AB79600A48711 /* Transition */,
+				F762D9E42425ED48006BEF74 /* PageControllerDemo */,
+				F767247F23A54D7F003C00AF /* Features */,
+				F7672464239D1DB1003C00AF /* Shares */,
+				F76724552397F31D003C00AF /* Collections(9.0) */,
+				F767242223937A2E003C00AF /* Gesture(手势解锁) */,
+				F76724142392865B003C00AF /* Biometric(生物识别) */,
+				F7284726238AB79600A48711 /* Transition(转场) */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
 		};
-		F7284726238AB79600A48711 /* Transition */ = {
+		F7284726238AB79600A48711 /* Transition(转场) */ = {
 			isa = PBXGroup;
 			children = (
 				F7284727238AB7A600A48711 /* Controller */,
 			);
-			path = Transition;
+			path = "Transition(转场)";
 			sourceTree = "<group>";
 		};
 		F7284727238AB7A600A48711 /* Controller */ = {
@@ -256,8 +381,227 @@
 			children = (
 				F7284728238AB7B800A48711 /* SYJTransitioningViewController.h */,
 				F7284729238AB7B800A48711 /* SYJTransitioningViewController.m */,
+				F728472B238AC02D00A48711 /* SYJModalViewController.h */,
+				F728472C238AC02D00A48711 /* SYJModalViewController.m */,
+				F728472E238AC9FA00A48711 /* SYJBouncePresentAnimation.h */,
+				F728472F238AC9FA00A48711 /* SYJBouncePresentAnimation.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F762D9E42425ED48006BEF74 /* PageControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F762D9E82425F040006BEF74 /* PageController */,
+				F762D9E92425F06C006BEF74 /* SYJPageControllerDemoController.h */,
+				F762D9EA2425F06C006BEF74 /* SYJPageControllerDemoController.m */,
+			);
+			path = PageControllerDemo;
+			sourceTree = "<group>";
+		};
+		F762D9E82425F040006BEF74 /* PageController */ = {
+			isa = PBXGroup;
+			children = (
+				F762D9E52425ED69006BEF74 /* SYJPageController.h */,
+				F762D9E62425ED69006BEF74 /* SYJPageController.m */,
+			);
+			path = PageController;
+			sourceTree = "<group>";
+		};
+		F76724142392865B003C00AF /* Biometric(生物识别) */ = {
+			isa = PBXGroup;
+			children = (
+				F767241523928674003C00AF /* Controller */,
+				F767241923929340003C00AF /* SYJBiometricManager.h */,
+				F767241A23929340003C00AF /* SYJBiometricManager.m */,
+			);
+			path = "Biometric(生物识别)";
+			sourceTree = "<group>";
+		};
+		F767241523928674003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76724162392869A003C00AF /* SYJBiometricViewController.h */,
+				F76724172392869A003C00AF /* SYJBiometricViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767242223937A2E003C00AF /* Gesture(手势解锁) */ = {
+			isa = PBXGroup;
+			children = (
+				F767243523938936003C00AF /* GestureView(demo) */,
+				F767242A23938091003C00AF /* Sources */,
+				F767242323937A3E003C00AF /* Controller */,
+				F767242723937CB4003C00AF /* SYJGestureUnlockView.h */,
+				F767242823937CB4003C00AF /* SYJGestureUnlockView.m */,
+			);
+			path = "Gesture(手势解锁)";
+			sourceTree = "<group>";
+		};
+		F767242323937A3E003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F767244C2393E2F8003C00AF /* SubDemoVC */,
+				F767242423937A4F003C00AF /* SYJGestureViewController.h */,
+				F767242523937A4F003C00AF /* SYJGestureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767242A23938091003C00AF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F7672433239380D0003C00AF /* Home_refresh_bg.png */,
+				F767242F239380C8003C00AF /* gesture_node_normal.png */,
+				F7672430239380C8003C00AF /* gesture_node_normal@2x.png */,
+				F767242B239380BE003C00AF /* gesture_node_highlighted.png */,
+				F767242C239380BE003C00AF /* gesture_node_highlighted@2x.png */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F767243523938936003C00AF /* GestureView(demo) */ = {
+			isa = PBXGroup;
+			children = (
+				F767243623938963003C00AF /* SYJGestureView.h */,
+				F767243723938963003C00AF /* SYJGestureView.m */,
+				F76724492393CC8A003C00AF /* SYJGesturePreview.h */,
+				F767244A2393CC8A003C00AF /* SYJGesturePreview.m */,
+				F767243C23938B76003C00AF /* SYJGestureItemView.h */,
+				F767243D23938B76003C00AF /* SYJGestureItemView.m */,
+				F767243923938970003C00AF /* SYJGestureConst.h */,
+				F767243A23938970003C00AF /* SYJGestureConst.m */,
+				F767243F2393BE8E003C00AF /* SYJGestureVerifyLabel.h */,
+				F76724402393BE8E003C00AF /* SYJGestureVerifyLabel.m */,
+			);
+			path = "GestureView(demo)";
+			sourceTree = "<group>";
+		};
+		F76724452393C0C4003C00AF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F76724422393C098003C00AF /* UIColor+Extension.h */,
+				F76724432393C098003C00AF /* UIColor+Extension.m */,
+				F76724462393C186003C00AF /* CALayer+Shake.h */,
+				F76724472393C186003C00AF /* CALayer+Shake.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F767244C2393E2F8003C00AF /* SubDemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				F767244D2393E338003C00AF /* SYJBasicUnlockController.h */,
+				F767244E2393E338003C00AF /* SYJBasicUnlockController.m */,
+				F76724502393E441003C00AF /* SYJEnhanceUnlockController.h */,
+				F76724512393E441003C00AF /* SYJEnhanceUnlockController.m */,
+			);
+			path = SubDemoVC;
+			sourceTree = "<group>";
+		};
+		F76724552397F31D003C00AF /* Collections(9.0) */ = {
+			isa = PBXGroup;
+			children = (
+				F767245A2397F49A003C00AF /* View */,
+				F76724562397F34B003C00AF /* Controller */,
+				F767245B2397F4E1003C00AF /* SYJCollectionsLayout.h */,
+				F767245C2397F4E1003C00AF /* SYJCollectionsLayout.m */,
+			);
+			path = "Collections(9.0)";
+			sourceTree = "<group>";
+		};
+		F76724562397F34B003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F76724572397F362003C00AF /* SYJCollectionsController.h */,
+				F76724582397F362003C00AF /* SYJCollectionsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767245A2397F49A003C00AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F767245E2398080A003C00AF /* SYJCollectionHeaderView.h */,
+				F767245F2398080A003C00AF /* SYJCollectionHeaderView.m */,
+				F7672461239BDADC003C00AF /* SYJCollectionViewCell.h */,
+				F7672462239BDADC003C00AF /* SYJCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7672464239D1DB1003C00AF /* Shares */ = {
+			isa = PBXGroup;
+			children = (
+				F767246A239D1F34003C00AF /* LWShareView */,
+				F7672465239D1DC0003C00AF /* Controller */,
+			);
+			path = Shares;
+			sourceTree = "<group>";
+		};
+		F7672465239D1DC0003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7672467239D1DDB003C00AF /* SYJShareViewController.h */,
+				F7672468239D1DDB003C00AF /* SYJShareViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767246A239D1F34003C00AF /* LWShareView */ = {
+			isa = PBXGroup;
+			children = (
+				F767246D239D1F34003C00AF /* LWShareService.h */,
+				F7672472239D1F34003C00AF /* LWShareService.m */,
+				F767246E239D1F34003C00AF /* LWShareSheetView.h */,
+				F7672471239D1F34003C00AF /* LWShareSheetView.m */,
+				F767246C239D1F34003C00AF /* LWShareContentView.h */,
+				F7672473239D1F34003C00AF /* LWShareContentView.m */,
+				F7672475239D1F34003C00AF /* LWShareButton.h */,
+				F767246F239D1F34003C00AF /* LWShareButton.m */,
+				F767246B239D1F34003C00AF /* LWShareCollectionViewCell.h */,
+				F7672474239D1F34003C00AF /* LWShareCollectionViewCell.m */,
+				F767247D239D2876003C00AF /* UIColor+LW.h */,
+				F767247C239D2876003C00AF /* UIColor+LW.m */,
+				F7672470239D1F34003C00AF /* Share.xcassets */,
+			);
+			path = LWShareView;
+			sourceTree = "<group>";
+		};
+		F767247F23A54D7F003C00AF /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F767248423A60B1D003C00AF /* FeaturesManageView */,
+				F767248023A54D92003C00AF /* Controller */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F767248023A54D92003C00AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F767248123A54DA2003C00AF /* SYJFeaturesController.h */,
+				F767248223A54DA2003C00AF /* SYJFeaturesController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F767248423A60B1D003C00AF /* FeaturesManageView */ = {
+			isa = PBXGroup;
+			children = (
+				F767248523A60B72003C00AF /* SYJFeatureManagerLayout.h */,
+				F767248623A60B72003C00AF /* SYJFeatureManagerLayout.m */,
+				F767248C23A60E2F003C00AF /* SYJFeatureManagerModel.h */,
+				F767248D23A60E2F003C00AF /* SYJFeatureManagerModel.m */,
+				F767248923A60DB5003C00AF /* SYJFeatureManagerCell.h */,
+				F767248A23A60DB5003C00AF /* SYJFeatureManagerCell.m */,
+				F767249523A63B2F003C00AF /* SYJFeatureManagerHeaderView.h */,
+				F767249623A63B2F003C00AF /* SYJFeatureManagerHeaderView.m */,
+				F767249823A63B46003C00AF /* SYJFeatureManagerFooterView.h */,
+				F767249923A63B46003C00AF /* SYJFeatureManagerFooterView.m */,
+			);
+			path = FeaturesManageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +615,6 @@
 				F72846AD238975B200A48711 /* Sources */,
 				F72846AE238975B200A48711 /* Frameworks */,
 				F72846AF238975B200A48711 /* Resources */,
-				F82E0CC0F169CC2DA5365670 /* [CP] Embed Pods Frameworks */,
-				DE2EAAD6E277ECAD57051A1A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,8 +633,6 @@
 				F72846C8238975B300A48711 /* Sources */,
 				F72846C9238975B300A48711 /* Frameworks */,
 				F72846CA238975B300A48711 /* Resources */,
-				A35EC939061326FCEF0B9D6A /* [CP] Embed Pods Frameworks */,
-				5762F5112730BAC291DD3941 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,12 +689,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72847132389838C00A48711 /* Localizable.strings in Resources */,
+				F767242D239380BE003C00AF /* gesture_node_highlighted.png in Resources */,
 				F72846E42389766D00A48711 /* Main.storyboard in Resources */,
 				F72846FD23897FA600A48711 /* InfoPlist.strings in Resources */,
 				F728471A23898ED000A48711 /* ShortcutItem.strings in Resources */,
+				F7672477239D1F34003C00AF /* Share.xcassets in Resources */,
 				F728470A238982E400A48711 /* Launch Screen.storyboard in Resources */,
+				F7672431239380C8003C00AF /* gesture_node_normal.png in Resources */,
+				F767242E239380BE003C00AF /* gesture_node_highlighted@2x.png in Resources */,
 				F7284720238A53EF00A48711 /* DemoList.plist in Resources */,
 				F72846E22389766D00A48711 /* Assets.xcassets in Resources */,
+				F7672434239380D0003C00AF /* Home_refresh_bg.png in Resources */,
+				F767241E2392C061003C00AF /* Biometric.strings in Resources */,
+				F7672432239380C8003C00AF /* gesture_node_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,25 +715,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5762F5112730BAC291DD3941 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		58D7943472B2D1D9D704F019 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,25 +735,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A35EC939061326FCEF0B9D6A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C227D015BC13C4EEC910B217 /* [CP] Check Pods Manifest.lock */ = {
@@ -450,44 +759,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE2EAAD6E277ECAD57051A1A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F82E0CC0F169CC2DA5365670 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -495,14 +766,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F767248823A60BE1003C00AF /* SYJFeatureManagerLayout.m in Sources */,
+				F767247E239D2876003C00AF /* UIColor+LW.m in Sources */,
+				F76724542393FC93003C00AF /* SYJGestureItemView.m in Sources */,
+				F767248E23A60E2F003C00AF /* SYJFeatureManagerModel.m in Sources */,
+				F7672478239D1F34003C00AF /* LWShareSheetView.m in Sources */,
+				F76724532393FAC2003C00AF /* SYJGestureView.m in Sources */,
 				F72847052389807B00A48711 /* SYJNavigationController.m in Sources */,
+				F7672479239D1F34003C00AF /* LWShareService.m in Sources */,
+				F767245D2397F4E1003C00AF /* SYJCollectionsLayout.m in Sources */,
+				F76724602398080A003C00AF /* SYJCollectionHeaderView.m in Sources */,
+				F762D9EB2425F06C006BEF74 /* SYJPageControllerDemoController.m in Sources */,
+				F7672476239D1F34003C00AF /* LWShareButton.m in Sources */,
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
+				F762D9E72425ED69006BEF74 /* SYJPageController.m in Sources */,
+				F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */,
+				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
+				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
+				F7284730238AC9FA00A48711 /* SYJBouncePresentAnimation.m in Sources */,
+				F76724182392869A003C00AF /* SYJBiometricViewController.m in Sources */,
+				F767242623937A4F003C00AF /* SYJGestureViewController.m in Sources */,
+				F728472D238AC02D00A48711 /* SYJModalViewController.m in Sources */,
+				F767243B23938970003C00AF /* SYJGestureConst.m in Sources */,
+				F76724522393E441003C00AF /* SYJEnhanceUnlockController.m in Sources */,
+				F767248323A54DA2003C00AF /* SYJFeaturesController.m in Sources */,
+				F767247B239D1F34003C00AF /* LWShareCollectionViewCell.m in Sources */,
 				F72846EB238976ED00A48711 /* SceneDelegate.m in Sources */,
 				F72846F523897D8900A48711 /* SYJShortcutItemManager.m in Sources */,
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
+				F76724412393BE8E003C00AF /* SYJGestureVerifyLabel.m in Sources */,
 				F72846E52389766D00A48711 /* main.m in Sources */,
+				F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
+				F767249723A63B2F003C00AF /* SYJFeatureManagerHeaderView.m in Sources */,
+				F767241B23929340003C00AF /* SYJBiometricManager.m in Sources */,
+				F767247A239D1F34003C00AF /* LWShareContentView.m in Sources */,
+				F767244B2393CC8A003C00AF /* SYJGesturePreview.m in Sources */,
+				F767248B23A60DB5003C00AF /* SYJFeatureManagerCell.m in Sources */,
+				F76724482393C186003C00AF /* CALayer+Shake.m in Sources */,
+				F76724592397F362003C00AF /* SYJCollectionsController.m in Sources */,
+				F767242923937CB5003C00AF /* SYJGestureUnlockView.m in Sources */,
+				F767249A23A63B46003C00AF /* SYJFeatureManagerFooterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +874,15 @@
 				F728471D23898ED200A48711 /* zh-Hans */,
 			);
 			name = ShortcutItem.strings;
+			sourceTree = "<group>";
+		};
+		F76724202392C061003C00AF /* Biometric.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F767241F2392C061003C00AF /* en */,
+				F76724212392C064003C00AF /* zh-Hans */,
+			);
+			name = Biometric.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -702,7 +1016,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -722,7 +1036,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.com.shenyj.DebugingProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

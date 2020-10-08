@@ -8,6 +8,8 @@ target 'DebugingProject' do
   # Pods for DebugingProject
   pod 'Masonry', '~> 1.1.0',:inhibit_warnings => false
   pod 'YYModel', '~> 1.0.4',:inhibit_warnings => false
+  pod 'JVFloatLabeledTextField', '~> 1.2.2',:inhibit_warnings => false
+  pod 'SDWebImage', '~> 5.7.3'
   
   target 'DebugingProjectTests' do
     inherit! :search_paths

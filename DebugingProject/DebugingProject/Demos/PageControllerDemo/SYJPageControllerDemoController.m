@@ -1,27 +1,22 @@
 //
-//  SYJTransitioningViewController.m
+//  SYJPageControllerDemoController.m
 //  DebugingProject
 //
-//  Created by ShenYj on 2019/11/24.
-//  Copyright © 2019 ShenYj. All rights reserved.
+//  Created by ShenYj on 2020/3/21.
+//  Copyright © 2020 ShenYj. All rights reserved.
 //
 
-#import "SYJTransitioningViewController.h"
+#import "SYJPageControllerDemoController.h"
 
-@interface SYJTransitioningViewController ()
+@interface SYJPageControllerDemoController ()
 
 @end
 
-@implementation SYJTransitioningViewController
+@implementation SYJPageControllerDemoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setUI];
-}
-- (void)setUI
-{
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 /*
