@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		260C2B285C070612433A36D5 /* libPods-DebugingProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF418483FDDC6A78932201D /* libPods-DebugingProject.a */; };
 		3D33A57D0C739E5ED806A90A /* libPods-DebugingProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F4CCB95CE8B373E35308799 /* libPods-DebugingProjectTests.a */; };
+		F7079320252F2C5D0095AA3F /* SYJFuncGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F707931F252F2C5D0095AA3F /* SYJFuncGroupModel.m */; };
+		F7079328252F2FDE0095AA3F /* SYJFuncDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7079327252F2FDE0095AA3F /* SYJFuncDemoController.m */; };
 		F72846D1238975B300A48711 /* DebugingProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F72846D0238975B300A48711 /* DebugingProjectTests.m */; };
 		F72846E22389766D00A48711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72846DC2389766D00A48711 /* Assets.xcassets */; };
 		F72846E42389766D00A48711 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72846DF2389766D00A48711 /* Main.storyboard */; };
@@ -89,6 +91,10 @@
 		9F4CCB95CE8B373E35308799 /* libPods-DebugingProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DebugingProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2DD48C40E2C7CF4EE51E68 /* Pods-DebugingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProject/Pods-DebugingProject.debug.xcconfig"; sourceTree = "<group>"; };
 		E61B896BAF7ADE44B7D1E945 /* Pods-DebugingProjectTests.increment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DebugingProjectTests.increment.xcconfig"; path = "Pods/Target Support Files/Pods-DebugingProjectTests/Pods-DebugingProjectTests.increment.xcconfig"; sourceTree = "<group>"; };
+		F707931E252F2C5D0095AA3F /* SYJFuncGroupModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFuncGroupModel.h; sourceTree = "<group>"; };
+		F707931F252F2C5D0095AA3F /* SYJFuncGroupModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFuncGroupModel.m; sourceTree = "<group>"; };
+		F7079326252F2FDE0095AA3F /* SYJFuncDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYJFuncDemoController.h; sourceTree = "<group>"; };
+		F7079327252F2FDE0095AA3F /* SYJFuncDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYJFuncDemoController.m; sourceTree = "<group>"; };
 		F72846B1238975B200A48711 /* DebugingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DebugingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72846C5238975B200A48711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F72846CC238975B300A48711 /* DebugingProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DebugingProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,6 +255,27 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F707931D252F2C2D0095AA3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F707931E252F2C5D0095AA3F /* SYJFuncGroupModel.h */,
+				F707931F252F2C5D0095AA3F /* SYJFuncGroupModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7079325252F2F820095AA3F /* EditFuncs */ = {
+			isa = PBXGroup;
+			children = (
+				F76724552397F31D003C00AF /* Collections(9.0) */,
+				F767247F23A54D7F003C00AF /* Features */,
+				F7697B16248BD2D60049E45F /* MoreFunc */,
+				F7079326252F2FDE0095AA3F /* SYJFuncDemoController.h */,
+				F7079327252F2FDE0095AA3F /* SYJFuncDemoController.m */,
+			);
+			path = EditFuncs;
+			sourceTree = "<group>";
+		};
 		F72846A8238975B200A48711 = {
 			isa = PBXGroup;
 			children = (
@@ -370,11 +397,9 @@
 		F7284725238AB78E00A48711 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				F7697B16248BD2D60049E45F /* MoreFunc */,
+				F7079325252F2F820095AA3F /* EditFuncs */,
 				F762D9E42425ED48006BEF74 /* PageControllerDemo */,
-				F767247F23A54D7F003C00AF /* Features */,
 				F7672464239D1DB1003C00AF /* Shares */,
-				F76724552397F31D003C00AF /* Collections(9.0) */,
 				F767242223937A2E003C00AF /* Gesture(手势解锁) */,
 				F76724142392865B003C00AF /* Biometric(生物识别) */,
 				F7284726238AB79600A48711 /* Transition(转场) */,
@@ -621,6 +646,7 @@
 		F7697B16248BD2D60049E45F /* MoreFunc */ = {
 			isa = PBXGroup;
 			children = (
+				F707931D252F2C2D0095AA3F /* Model */,
 				F7697B19248BD2E90049E45F /* Cell */,
 				F7697B1E248BD2E90049E45F /* FunctionsManagementViews */,
 				F7697B18248BD2E90049E45F /* SYJFunctionsManagementController.h */,
@@ -831,6 +857,7 @@
 				F72846EC238976ED00A48711 /* AppDelegate.m in Sources */,
 				F728472A238AB7B800A48711 /* SYJTransitioningViewController.m in Sources */,
 				F762D9E72425ED69006BEF74 /* SYJPageController.m in Sources */,
+				F7079320252F2C5D0095AA3F /* SYJFuncGroupModel.m in Sources */,
 				F7672469239D1DDB003C00AF /* SYJShareViewController.m in Sources */,
 				F76724442393C098003C00AF /* UIColor+Extension.m in Sources */,
 				F7672463239BDADC003C00AF /* SYJCollectionViewCell.m in Sources */,
@@ -848,6 +875,7 @@
 				F7284724238A566B00A48711 /* SYJBaseModel.m in Sources */,
 				F76724412393BE8E003C00AF /* SYJGestureVerifyLabel.m in Sources */,
 				F72846E52389766D00A48711 /* main.m in Sources */,
+				F7079328252F2FDE0095AA3F /* SYJFuncDemoController.m in Sources */,
 				F767244F2393E338003C00AF /* SYJBasicUnlockController.m in Sources */,
 				F72846F223897BFB00A48711 /* SYJViewController.m in Sources */,
 				F7697B35248BD2E90049E45F /* SYJFunctionsManagementPresenter.m in Sources */,
